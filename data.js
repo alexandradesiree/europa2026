@@ -47,9 +47,10 @@ window.TRIP = {
 
     { id: "par", name: "París",     accent: "#3E4A78", tz: "Europe/Paris",
       from: "2026-09-12", to: "2026-09-18",
-      hotel: { name: "Meliá Paris Vendôme", addr: "DIRECCIÓN POR VERIFICAR",
-               lat: null, lng: null, phone: "", checkin: "", checkout: "",
-               pend: ["CONFLICTO ABIERTO: el registro anterior indicaba «Villa Marquis, Meliá Collection, 35 Rue Jean Goujon, 75008». Tu última instrucción indica «Meliá Paris Vendôme». Confirma cuál es y su dirección exacta: TODOS los traslados de París parten de aquí."] },
+      hotel: { name: "Meliá Paris Vendôme", addr: "8 Rue Cambon, 75001 París",
+               lat: 48.8664, lng: 2.3268, phone: "+33 1 44 77 54 00", checkin: "15:00", checkout: "12:00",
+               note: "1er distrito, entre Place Vendôme y Place de la Concorde. Metro Concorde a 300 m; Tullerías y Louvre a pie.",
+               pend: ["Coordenadas aproximadas: verificar en Maps"] },
       info: { emergencias: "112", transporte: "Metro y RER · Navigo Easy o billete t+ ",
               moneda: "Euro (€)", propinas: "Servicio incluido. Redondear si acaso",
               idioma: "Francés. Saludar siempre con «Bonjour» al entrar",
@@ -78,8 +79,9 @@ window.TRIP = {
 
     { id: "f3", date: "2026-09-18", airline: "", number: "",
       from: "París-Charles de Gaulle (CDG)", to: "Mérida (MID)",
-      dep: "", arr: "", terminalOut: "", terminalIn: "",
-      pend: ["Número de vuelo, hora de salida y terminal: DATO PENDIENTE. Sin la hora de salida no puedo calcular la hora de salida del hotel el viernes 18."] }
+      dep: "10:00", arr: "", terminalOut: "", terminalIn: "",
+      pend: ["HORA PROVISIONAL: 10:00 dicho de memoria, sin comprobante. Confirmar con el boleto.",
+             "Aerolínea, número de vuelo, escalas y terminal: DATO PENDIENTE"] }
   ],
 
   /* ---------------------------------------------------------------- RESERVAS */
@@ -113,10 +115,11 @@ window.TRIP = {
       pend: ["Dirección exacta de la fábrica y persona de contacto: DATO PENDIENTE"] },
 
     { id: "r_freesto",  name: "Free tour por Estocolmo (español)", city: "sto",
-      date: "2026-09-11", time: "", people: 2, status: "pendiente",
+      date: "2026-09-11", time: "13:00", people: 4, status: "confirmado",
+      provider: "Civitatis (verificar en el correo de confirmación)", code: "A41038311",
       meeting: "Plaza Gustav Adolf (Gustav Adolfs torg)",
-      note: "2 h 30. Termina en Stortorget. Gratis con propina.",
-      pend: ["Hora de inicio: DATO PENDIENTE"] },
+      note: "13:00 h · 2 h 30 · gratis con propina. Termina en Stortorget. SON 4 PERSONAS: el amigo se suma este día.",
+      pend: ["Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE"] },
 
     { id: "r_crucerosto", name: "Crucero por el archipiélago · Strömma", city: "sto",
       date: "2026-09-12", time: "10:30", people: 2, status: "pendiente",
@@ -126,6 +129,7 @@ window.TRIP = {
 
     { id: "r_freearco", name: "Free tour Arco del Triunfo y Campos Elíseos (español)", city: "par",
       date: "2026-09-13", time: "16:30", people: 2, status: "confirmado",
+      provider: "Civitatis (verificar en el correo de confirmación)", code: "A41342195",
       meeting: "VERIFICAR EN COMPROBANTE",
       note: "Termina en la zona de Trocadéro.",
       pend: ["Punto exacto de encuentro y referencia visual del guía: VERIFICAR EN COMPROBANTE"] },
@@ -137,6 +141,7 @@ window.TRIP = {
 
     { id: "r_montmartre", name: "Free tour Montmartre (español)", city: "par",
       date: "2026-09-14", time: "15:45", people: 2, status: "confirmado",
+      provider: "Civitatis (verificar en el correo de confirmación)", code: "A41342138",
       meeting: "Place Blanche (frente al Moulin Rouge)",
       note: "≈2 h 30. Termina hacia las 18:15 en Sacré-Cœur.",
       pend: ["Referencia visual exacta del guía: VERIFICAR EN COMPROBANTE"] },
@@ -263,9 +268,12 @@ window.TRIP = {
         { id:"m07e", t:"12:35", name:"Catedral de la Almudena", cat:"sight", prio:"P3", flex:true,
           lat:40.4158, lng:-3.7144, addr:"Calle de Bailén 10, Madrid",
           do:"Entrada rápida al interior. 15–20 minutos bastan." },
-        { id:"m07f", t:"13:05", name:"FlamencoExport", cat:"tour", prio:"P2",
+        { id:"m07f", t:"13:00", end:"13:20", name:"FlamencoExport · abanicos", cat:"shop", prio:"P3", flex:true,
           lat:40.4185, lng:-3.7096, addr:"Calle de Campomanes 4, 28013 Madrid",
-          pend:["ROL DE ESTA PARADA POR CONFIRMAR: aparece en tus instrucciones como integrada en la ruta del lunes, pero no consta si es recogida de entradas, espectáculo o punto de encuentro. Confirma qué se hace aquí y a qué hora.",
+          what:"Tienda de artículos flamencos: abanicos, mantones, peinetas.",
+          do:"Ver abanicos. Queda a dos minutos del Palacio Real y a cinco de La Bola, así que entra sola en la secuencia sin desviarse.",
+          pend:["CONFLICTO DE HORARIO: dijiste que iba después de Cardamomo, pero el tablao termina hacia las 22:30 y la tienda estará cerrada. La coloqué entre la Almudena y La Bola, que es donde encaja geográficamente. Si prefieres otro momento, dímelo.",
+                "Horario de apertura de la tienda: DATO PENDIENTE",
                 "Coordenadas aproximadas: verificar"] },
         { id:"m07g", t:"13:30", end:"15:15", name:"La Bola", cat:"food", prio:"P1", res:"r_labola",
           lat:40.4200, lng:-3.7112, addr:"Calle de la Bola 5, 28013 Madrid",
@@ -432,8 +440,8 @@ window.TRIP = {
     {
       id: "d11", city: "sto", date: "2026-09-11", weekday: "Viernes", type: "city",
       concept: "Estocolmo a pie: Gamla Stan, café y miradores",
-      wake: "07:30", depart: "08:45", ret: "20:00",
-      note: "Hoy nos movemos a pie y en transporte público. El auto se queda.",
+      wake: "07:30", depart: "08:45", ret: "20:30",
+      note: "Hoy nos movemos a pie y en transporte público. El free tour de las 13:00 parte el día en dos: mañana de museo y tarde de barrios.",
       stops: [
         { id:"s11a", t:"08:45", name:"Hotel C Stockholm", cat:"hotel", prio:"P4",
           lat:59.3315, lng:18.0585, addr:"Vasaplan 4, Estocolmo" },
@@ -447,47 +455,57 @@ window.TRIP = {
           see:"La Sala Azul (que no es azul) y la Sala Dorada, con 18 millones de teselas de mosaico.",
           do:"El interior solo se visita con guía y en horarios fijos.",
           pend:["Horario de la visita guiada en español o inglés: DATO PENDIENTE"],
-          photo:{ frame:"horizontal", where:"Desde el patio interior mirando hacia la torre", back:"La torre con la corona de tres coronas doradas", light:"Mañana" } },
-        { id:"s11d", t:"11:45", name:"Free tour por Estocolmo", cat:"tour", prio:"P1", res:"r_freesto",
+          photo:{ frame:"horizontal", where:"Desde el patio interior mirando hacia la torre", back:"La torre con las tres coronas doradas", light:"Mañana" } },
+        { id:"s11b2", t:"11:45", end:"12:30", name:"Comida temprana", cat:"food", prio:"P2",
+          lat:59.3290, lng:18.0650, addr:"Entre Stadshuset y Gustav Adolfs torg",
+          do:"Comer antes del tour: son 2 h 30 de pie y termina a las 15:30.",
+          pend:["Restaurante: DATO PENDIENTE. Debe quedar en la línea Stadshuset → Gustav Adolfs torg, sin desvío."] },
+        { id:"s11d0", t:"12:45", name:"Gustav Adolfs torg · punto de encuentro", cat:"transport", prio:"P1", res:"r_freesto",
           lat:59.3300, lng:18.0690, addr:"Gustav Adolfs torg, Estocolmo",
+          do:"Llegar 15 minutos antes. Localizador A41038311. Hoy son 4 personas: se suma el amigo.",
+          pend:["Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE"] },
+        { id:"s11d", t:"13:00", end:"15:30", name:"Free tour por Estocolmo", cat:"tour", prio:"P1", res:"r_freesto",
+          lat:59.3300, lng:18.0690, addr:"De Gustav Adolfs torg a Stortorget",
           what:"Recorrido a pie en español de 2 h 30, gratuito con propina.",
-          do:"El encuentro es en la Plaza Gustav Adolf. Termina en Stortorget, en Gamla Stan.",
-          pend:["HORA DE INICIO: DATO PENDIENTE. La hora que ves es provisional y hay que confirmarla — todo el día depende de ella.",
-                "Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE"] },
-        { id:"s11e", t:"14:15", name:"Gamla Stan · fotos y compras", cat:"sight", prio:"P2",
+          do:"Termina en Stortorget, en el corazón de Gamla Stan: la siguiente parada ya estás ahí.",
+          note:"Reserva A41038311 · 4 personas · confirmada." },
+        { id:"s11e", t:"15:30", name:"Gamla Stan · fotos y compras", cat:"sight", prio:"P2",
           lat:59.3254, lng:18.0710, addr:"Stortorget, Gamla Stan, Estocolmo",
           what:"El casco medieval sobre su propia isla, con calles del siglo XIII.",
           see:"Las casas de colores de Stortorget y el callejón Mårten Trotzigs gränd, de 90 cm de ancho.",
-          do:"Compras suecas auténticas y pequeñas: cerámica, textil, dalahäst de madera.",
+          do:"El tour termina justo aquí. Compras suecas auténticas y pequeñas: cerámica, textil, dalahäst de madera.",
           photo:{ frame:"vertical", where:"En el lado norte de Stortorget, con el pozo a tu izquierda", back:"La fachada ocre y la roja juntas", light:"Tarde" } },
-        { id:"s11f", t:"15:15", name:"Skeppsholmen", cat:"sight", prio:"P4", flex:true,
+        { id:"s11f", t:"16:30", name:"Skeppsholmen", cat:"sight", prio:"P4", flex:true,
           lat:59.3253, lng:18.0840, addr:"Skeppsholmen, Estocolmo",
           what:"Isla tranquila unida por el puente de Skeppsholmsbron, con una de las mejores vistas del casco antiguo.",
-          pend:["POSICIÓN EN EL DÍA POR CONFIRMAR: aparece en tus instrucciones pero no consta en qué momento quedó dentro de la jornada del viernes. Colocado aquí de forma provisional como parada opcional."],
+          do:"Es la primera parada que cae si el día se alarga: queda al este y el resto de la tarde va hacia el sur.",
+          pend:["POSICIÓN EN EL DÍA POR CONFIRMAR: no consta en qué momento quedó dentro de la jornada. Colocada aquí como opcional."],
           photo:{ frame:"horizontal", where:"En mitad del puente Skeppsholmsbron", back:"La silueta completa de Gamla Stan sobre el agua", light:"Tarde" } },
-        { id:"s11g", t:"16:15", name:"Drop Coffee", cat:"food", prio:"P2",
+        { id:"s11g", t:"17:15", name:"Drop Coffee", cat:"food", prio:"P2",
           lat:59.3164, lng:18.0620, addr:"Wollmar Yxkullsgatan 10, Södermalm, Estocolmo",
           what:"Tostador de café de especialidad, de los más reconocidos de Escandinavia.",
           why:"Aquí la fika es por el café, no por el decorado. Cumple la regla de café realmente bueno.",
-          order:"Un filtro V60 de origen único y un kardemummabulle." },
-        { id:"s11h", t:"17:15", name:"Monteliusvägen", cat:"sight", prio:"P2",
+          order:"Un filtro V60 de origen único y un kardemummabulle.",
+          pend:["Horario de cierre: VERIFICAR. Muchos cafés de especialidad en Estocolmo cierran a las 17:00 o 18:00. Si cierra antes, hay que adelantarlo o cambiarlo."] },
+        { id:"s11h", t:"18:15", name:"Monteliusvägen", cat:"sight", prio:"P2",
           lat:59.3211, lng:18.0568, addr:"Monteliusvägen, Södermalm, Estocolmo",
           what:"Un paseo peatonal de 500 metros en alto sobre el lago Mälaren.",
           why:"Es la mejor vista panorámica de Estocolmo y es gratis.",
+          do:"A mediados de septiembre el sol se pone hacia las 19:30: esta hora cae dentro de la luz buena.",
           photo:{ frame:"horizontal", where:"En el tramo central del paseo, junto a los bancos de madera", back:"El Ayuntamiento a la izquierda y Gamla Stan a la derecha, con el agua delante", light:"Golden hour" } },
-        { id:"s11i", t:"18:00", name:"Paseo por Södermalm", cat:"sight", prio:"P4", flex:true,
+        { id:"s11i", t:"19:00", name:"Paseo por Södermalm", cat:"sight", prio:"P4", flex:true,
           lat:59.3180, lng:18.0640, addr:"Södermalm, Estocolmo",
           do:"Paseo natural, sin objetivo. Es el barrio con más carácter de la ciudad." },
-        { id:"s11j", t:"18:45", name:"Tunnbrödsrulle en un gatukök", cat:"food", prio:"P3",
+        { id:"s11j", t:"19:30", name:"Tunnbrödsrulle en un gatukök", cat:"food", prio:"P3",
           lat:59.3180, lng:18.0640, addr:"Södermalm",
           what:"Comida callejera sueca: salchicha, puré de papa, cebolla frita y salsa, todo enrollado en pan plano.",
-          pend:["GATUKÖK CONCRETO POR ELEGIR. Criterios acordados: autenticidad, horario real de apertura, y ruta natural desde Monteliusvägen — máximo 1–1,5 km adicionales."] },
-        { id:"s11k", t:"19:45", name:"Hotel C Stockholm", cat:"hotel", prio:"P4",
+          pend:["GATUKÖK CONCRETO POR ELEGIR. Criterios acordados: autenticidad, horario real de apertura y ruta natural desde Monteliusvägen — máximo 1–1,5 km adicionales."] },
+        { id:"s11k", t:"20:30", name:"Hotel C Stockholm", cat:"hotel", prio:"P4",
           lat:59.3315, lng:18.0585, addr:"Vasaplan 4, Estocolmo",
-          do:"Llegada estimada 19:45–20:00. Preparar maletas: mañana hay crucero y vuelo." }
+          do:"Preparar maletas: mañana hay crucero y vuelo.",
+          pend:["El regreso pasó de 19:45–20:00 a 20:30 porque el tour es a las 13:00, no a mediodía. Si quieres volver antes, lo que cae es Skeppsholmen."] }
       ]
     },
-
     {
       id: "d12", city: "sto", date: "2026-09-12", weekday: "Sábado", type: "hybrid",
       concept: "Crucero por el archipiélago y vuelo a París",
@@ -530,8 +548,8 @@ window.TRIP = {
           do:"Recoger equipaje y traslado al hotel.",
           pend:["Modo de traslado CDG → hotel: DATO PENDIENTE. A esa hora el taxi tarifa fija a la orilla derecha (~56 €) es lo más razonable con maletas."] },
         { id:"s12j", t:"21:45", name:"Hotel en París · check-in", cat:"hotel", prio:"P1",
-          addr:"DIRECCIÓN POR VERIFICAR",
-          pend:["CONFLICTO: confirmar hotel de París (ver ficha de la ciudad)"] }
+          lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París",
+          do:"Check-in a partir de las 15:00. Llegando a esta hora, la habitación ya está lista." }
       ]
     },
 
@@ -542,24 +560,25 @@ window.TRIP = {
       wake: "08:00", depart: "09:30", ret: "22:30",
       stops: [
         { id:"p13a", t:"09:30", name:"Hotel", cat:"hotel", prio:"P4",
-          addr:"DIRECCIÓN POR VERIFICAR", pend:["Confirmar hotel: todos los traslados de hoy parten de aquí"] },
+          lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París", pend:["Confirmar hotel: todos los traslados de hoy parten de aquí"] },
         { id:"p13b", t:"10:00", name:"Desayuno", cat:"food", prio:"P3", flex:true,
           addr:"Cerca del hotel", pend:["Boulangerie o café: DATO PENDIENTE"] },
-        { id:"p13c", t:"11:00", name:"Pont Alexandre III", cat:"sight", prio:"P2",
-          lat:48.8639, lng:2.3134, addr:"Pont Alexandre III, 75008 París",
-          what:"El puente más ornamentado de París, construido para la Exposición Universal de 1900.",
-          why:"Es puro art nouveau: farolas, querubines, ninfas y cuatro columnas doradas de 17 metros.",
-          photo:{ frame:"vertical", where:"En la esquina noreste del puente, junto a la columna dorada", back:"La perspectiva del puente con los Inválidos al fondo", light:"Mañana" } },
-        { id:"p13d", t:"11:40", name:"Place de la Concorde", cat:"sight", prio:"P3",
+        { id:"p13e", t:"10:30", end:"11:05", name:"Jardín de las Tullerías", cat:"sight", prio:"P3",
+          lat:48.8635, lng:2.3270, addr:"Jardin des Tuileries, 75001 París",
+          what:"El jardín de estilo francés diseñado por Le Nôtre, el mismo de Versalles.",
+          do:"Empezamos aquí porque el hotel está a cinco minutos, en Rue Cambon. Paseo por el eje central; las sillas verdes son públicas.",
+          note:"Si el pebetero/globo olímpico sigue instalado, está aquí.",
+          pend:["Confirmar si el globo olímpico sigue en pie en septiembre de 2026"] },
+        { id:"p13d", t:"11:15", name:"Place de la Concorde", cat:"sight", prio:"P3",
           lat:48.8656, lng:2.3212, addr:"Place de la Concorde, 75008 París",
           what:"La plaza más grande de París, donde estuvo la guillotina durante la Revolución.",
           see:"El obelisco de Luxor, de 3.300 años, regalado por Egipto en 1836." },
-        { id:"p13e", t:"12:10", end:"13:00", name:"Jardín de las Tullerías", cat:"sight", prio:"P3",
-          lat:48.8635, lng:2.3270, addr:"Jardin des Tuileries, 75001 París",
-          what:"El jardín de estilo francés diseñado por Le Nôtre, el mismo de Versalles.",
-          do:"Paseo por el eje central. Las sillas verdes son públicas: siéntense.",
-          note:"Si el pebetero/globo olímpico sigue instalado, está aquí.",
-          pend:["Confirmar si el globo olímpico sigue en pie en septiembre de 2026"] },
+        { id:"p13c", t:"11:45", name:"Pont Alexandre III", cat:"sight", prio:"P2",
+          lat:48.8639, lng:2.3134, addr:"Pont Alexandre III, 75008 París",
+          what:"El puente más ornamentado de París, construido para la Exposición Universal de 1900.",
+          do:"Desde aquí se sube por la Avenue Winston Churchill directo a los Campos Elíseos: la ruta encadena sola.",
+          why:"Es puro art nouveau: farolas, querubines, ninfas y cuatro columnas doradas de 17 metros.",
+          photo:{ frame:"vertical", where:"En la esquina noreste del puente, junto a la columna dorada", back:"La perspectiva del puente con los Inválidos al fondo", light:"Mañana" } },
         { id:"p13f", t:"13:15", name:"Comida", cat:"food", prio:"P2",
           addr:"Zona Tullerías / Concorde", pend:["Restaurante: DATO PENDIENTE"] },
         { id:"p13g", t:"14:45", name:"Ladurée · macarons", cat:"food", prio:"P4", flex:true,
@@ -597,7 +616,7 @@ window.TRIP = {
           note:"El atardecer es hacia las 20:07. En cualquiera de los dos horarios se ve la luz cambiar." },
         { id:"p13n", t:"20:45", name:"Cena", cat:"food", prio:"P2",
           addr:"Zona Torre Eiffel / Champ de Mars", pend:["Restaurante: DATO PENDIENTE"] },
-        { id:"p13o", t:"22:30", name:"Hotel", cat:"hotel", prio:"P4", addr:"DIRECCIÓN POR VERIFICAR" }
+        { id:"p13o", t:"22:30", name:"Hotel", cat:"hotel", prio:"P4", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París" }
       ]
     },
 
@@ -607,9 +626,9 @@ window.TRIP = {
       wake: "06:15", depart: "07:00", ret: "22:00",
       note: "Hoy NO se vuelve al hotel después del desayuno. La sesión de fotos a las 08:00 fija el arranque del día.",
       stops: [
-        { id:"p14a", t:"07:00", name:"Salida del hotel", cat:"hotel", prio:"P1", addr:"DIRECCIÓN POR VERIFICAR",
+        { id:"p14a", t:"07:00", name:"Salida del hotel", cat:"hotel", prio:"P1", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París",
           do:"Salir arreglados: la sesión empieza a las 08:00 y no hay margen para volver.",
-          pend:["Hora de salida provisional: depende del hotel definitivo de París."] },
+          note:"El punto de encuentro está a unos 25 min: metro o taxi." },
         { id:"p14b", t:"07:45", name:"Pont de Bir-Hakeim · punto de encuentro", cat:"transport", prio:"P1", res:"r_fotos",
           lat:48.8558, lng:2.2866, addr:"Pont de Bir-Hakeim, 75015 París",
           do:"El punto de encuentro está EN MEDIO DEL PUENTE, junto a la estatua verde. Por encima pasa la línea 6 del metro, en el tramo elevado entre Bir-Hakeim y Passy.",
@@ -656,7 +675,7 @@ window.TRIP = {
           photo:{ frame:"horizontal", where:"En el mirador de la escalinata, unos 20 escalones por debajo de la explanada", back:"París entero extendido al fondo", light:"Golden hour" } },
         { id:"p14j", t:"19:30", name:"Cena en Montmartre", cat:"food", prio:"P3",
           lat:48.8850, lng:2.3400, addr:"Montmartre", pend:["Restaurante: DATO PENDIENTE"] },
-        { id:"p14k", t:"22:00", name:"Hotel", cat:"hotel", prio:"P4", addr:"DIRECCIÓN POR VERIFICAR" }
+        { id:"p14k", t:"22:00", name:"Hotel", cat:"hotel", prio:"P4", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París" }
       ]
     },
 
@@ -666,11 +685,11 @@ window.TRIP = {
       wake: "06:30", depart: "07:30", ret: "23:30",
       note: "Un solo día. Decisión cerrada: no hay segundo día.",
       stops: [
-        { id:"p15a", t:"07:30", name:"Salida del hotel", cat:"hotel", prio:"P1", addr:"DIRECCIÓN POR VERIFICAR",
+        { id:"p15a", t:"07:30", name:"Salida del hotel", cat:"hotel", prio:"P1", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París",
           do:"Desayuno rápido o comprado la noche anterior. Hoy se madruga." },
-        { id:"p15b", t:"07:50", name:"Charles de Gaulle–Étoile · RER A", cat:"transport", prio:"P1",
-          lat:48.8745, lng:2.2950, addr:"Charles de Gaulle–Étoile, París",
-          do:"Ruta acordada: taxi desde el hotel hasta Charles de Gaulle–Étoile, y ahí tomar el RER A directo.",
+        { id:"p15b", t:"07:50", name:"Estación Auber · RER A", cat:"transport", prio:"P1",
+          lat:48.8725, lng:2.3290, addr:"Estación Auber, 75009 París",
+          do:"Auber está a 8 minutos a pie del hotel y es RER A directo a Disney: sin taxi y sin transbordo.",
           pend:["Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY."] },
         { id:"p15c", t:"08:45", name:"Marne-la-Vallée–Chessy", cat:"transport", prio:"P1",
           lat:48.8700, lng:2.7820, addr:"Marne-la-Vallée–Chessy",
@@ -694,7 +713,7 @@ window.TRIP = {
           lat:48.8700, lng:2.7820, addr:"Marne-la-Vallée–Chessy",
           do:"Salir en cuanto termine el espectáculo o esperar 20 minutos a que se vacíe el andén. Dirección: hacia París (Poissy / Cergy / Saint-Germain-en-Laye).",
           pend:["Hora del último RER A hacia París: VERIFICAR el mismo día en la estación. Es el dato que no se puede fallar."] },
-        { id:"p15i", t:"23:30", name:"Hotel", cat:"hotel", prio:"P4", addr:"DIRECCIÓN POR VERIFICAR" }
+        { id:"p15i", t:"23:30", name:"Hotel", cat:"hotel", prio:"P4", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París" }
       ]
     },
 
@@ -703,7 +722,7 @@ window.TRIP = {
       concept: "Louvre e Île de la Cité",
       wake: "08:00", depart: "09:30", ret: "22:30",
       stops: [
-        { id:"p16a", t:"09:30", name:"Hotel", cat:"hotel", prio:"P4", addr:"DIRECCIÓN POR VERIFICAR" },
+        { id:"p16a", t:"09:30", name:"Hotel", cat:"hotel", prio:"P4", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París" },
         { id:"p16b", t:"09:45", name:"Desayuno", cat:"food", prio:"P3", flex:true,
           addr:"Cerca del hotel", pend:["Local: DATO PENDIENTE"] },
         { id:"p16c", t:"11:15", name:"Louvre · llegada y acceso", cat:"sight", prio:"P1", res:"r_louvre",
@@ -741,7 +760,7 @@ window.TRIP = {
         { id:"p16j", t:"20:30", name:"Cena en el Marais", cat:"food", prio:"P2",
           lat:48.8570, lng:2.3600, addr:"Le Marais, París",
           pend:["Restaurante del Marais: EN PAUSA DELIBERADA, sin cerrar. También sigue pendiente dónde tomar la sopa de cebolla."] },
-        { id:"p16k", t:"22:30", name:"Hotel", cat:"hotel", prio:"P4", addr:"DIRECCIÓN POR VERIFICAR" }
+        { id:"p16k", t:"22:30", name:"Hotel", cat:"hotel", prio:"P4", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París" }
       ]
     },
 
@@ -750,11 +769,11 @@ window.TRIP = {
       concept: "Versalles y cena especial",
       wake: "06:45", depart: "07:45", ret: "23:30",
       stops: [
-        { id:"p17a", t:"07:45", name:"Salida del hotel", cat:"hotel", prio:"P1", addr:"DIRECCIÓN POR VERIFICAR",
+        { id:"p17a", t:"07:45", name:"Salida del hotel", cat:"hotel", prio:"P1", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París",
           do:"Desayuno rápido. La entrada al Palacio es a las 10:00 y no admite retraso." },
-        { id:"p17b", t:"08:10", name:"Pont de l'Alma · RER C", cat:"transport", prio:"P1",
-          lat:48.8629, lng:2.3010, addr:"Estación Pont de l'Alma, RER C, 75008 París",
-          do:"Ruta acordada: hotel → Pont de l'Alma → RER C → Versailles Château–Rive Gauche.",
+        { id:"p17b", t:"08:10", name:"Estación Invalides · RER C", cat:"transport", prio:"P1",
+          lat:48.8620, lng:2.3145, addr:"Estación Invalides, RER C, 75007 París",
+          do:"18 minutos a pie desde el hotel, cruzando el Pont de la Concorde. Misma línea RER C hacia Versalles.",
           pend:["ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE, no Versailles-Chantiers ni Versailles Rive Droite.",
                 "Frecuencia y duración exactas del trayecto: DATO PENDIENTE"] },
         { id:"p17c", t:"09:20", name:"Versailles Château–Rive Gauche", cat:"transport", prio:"P1",
@@ -790,22 +809,24 @@ window.TRIP = {
           what:"La cena importante del viaje en París.",
           pend:["SIN CERRAR. Candidato registrado: Joséphine Chez Dumonet. Requiere reserva con antelación. Decidir antes de viajar."] },
         { id:"p17k", t:"23:30", name:"Hotel · preparar maletas", cat:"hotel", prio:"P1",
-          addr:"DIRECCIÓN POR VERIFICAR", do:"Mañana es día de aeropuerto." }
+          lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París", do:"Mañana es día de aeropuerto." }
       ]
     },
 
     {
       id: "d18", city: "par", date: "2026-09-18", weekday: "Viernes", type: "transfer",
       concept: "París → Mérida",
-      flight: "f3",
+      flight: "f3", wake: "05:15", depart: "06:00",
+      note: "Horas calculadas sobre un vuelo a las 10:00 sin confirmar. Tres horas de antelación por ser vuelo intercontinental con control de pasaportes.",
       stops: [
-        { id:"p18a", t:"", name:"Salida del hotel", cat:"hotel", prio:"P1", addr:"DIRECCIÓN POR VERIFICAR",
-          pend:["HORA DE SALIDA NO CALCULABLE: falta la hora del vuelo de regreso. Regla: salir del hotel 4 h antes de la salida del vuelo para un vuelo transatlántico desde CDG."] },
-        { id:"p18b", t:"", name:"Charles de Gaulle", cat:"transport", prio:"P1",
+        { id:"p18a", t:"06:00", name:"Salida del hotel", cat:"hotel", prio:"P1", lat:48.8664, lng:2.3268, addr:"Meliá Paris Vendôme, 8 Rue Cambon, 75001 París",
+          do:"Check-out antes de las 12:00, pero hoy salimos mucho antes. Taxi pedido la noche anterior.",
+          pend:["Hora calculada sobre un vuelo a las 10:00 SIN CONFIRMAR. Si la hora del vuelo cambia, esta hora cambia."] },
+        { id:"p18b", t:"07:00", name:"Charles de Gaulle", cat:"transport", prio:"P1",
           lat:49.0097, lng:2.5479, addr:"Aeropuerto Charles de Gaulle (CDG)",
           do:"Facturación, control de seguridad y control de pasaportes (salida del espacio Schengen: añade tiempo).",
           pend:["Terminal: DATO PENDIENTE", "Puerta de embarque: VERIFICAR EL DÍA DEL VUELO"] },
-        { id:"p18c", t:"", name:"Vuelo de regreso a Mérida", cat:"flight", prio:"P1",
+        { id:"p18c", t:"10:00", name:"Vuelo de regreso a Mérida", cat:"flight", prio:"P1",
           addr:"Vuelo por confirmar",
           pend:["Aerolínea, número de vuelo, hora de salida y escalas: DATO PENDIENTE"] }
       ]
@@ -830,12 +851,12 @@ window.TRIP = {
       steps:["Taxi desde el hotel hasta la estación Charles de Gaulle–Étoile.","Es la ruta que decidimos: evita transbordos con el cansancio de las 07:30."],
       note:"Depende del hotel definitivo de París." },
 
-    "p15b>p15c": { mode:"rer", line:"RER A", dir:"Marne-la-Vallée–Chessy", dur:45, dist:"32 km",
-      steps:["Entrar a la estación Charles de Gaulle–Étoile y seguir los carteles del RER A.","En el andén, mirar la pantalla: el destino debe decir MARNE-LA-VALLÉE–CHESSY. La línea A se bifurca y no todos los trenes llegan.","Tomar el RER A en dirección este.","Bajar en la estación final: MARNE-LA-VALLÉE–CHESSY.","Salir de la estación: la entrada de los parques está a 3 minutos a pie, de frente."],
+    "p15b>p15c": { mode:"rer", line:"RER A", dir:"Marne-la-Vallée–Chessy", dur:40, dist:"32 km",
+      steps:["Entrar a la estación Auber y seguir los carteles del RER A.","En el andén, mirar la pantalla: el destino debe decir MARNE-LA-VALLÉE–CHESSY. La línea A se bifurca y no todos los trenes llegan.","Tomar el RER A en dirección este.","Bajar en la estación final: MARNE-LA-VALLÉE–CHESSY.","Salir de la estación: la entrada de los parques está a 3 minutos a pie, de frente."],
       note:"Verificar el andén en el panel. El billete de metro sencillo NO sirve: hace falta billete de zona hasta Marne-la-Vallée." },
 
     "p15h>p15i": { mode:"rer", line:"RER A", dir:"hacia París", dur:45, dist:"32 km",
-      steps:["Volver a la estación Marne-la-Vallée–Chessy.","Tomar el RER A en dirección oeste (destinos: Poissy, Cergy o Saint-Germain-en-Laye).","Bajar en Charles de Gaulle–Étoile o en la estación que corresponda al hotel definitivo.","Desde ahí, taxi al hotel."],
+      steps:["Volver a la estación Marne-la-Vallée–Chessy.","Tomar el RER A en dirección oeste (destinos: Poissy, Cergy o Saint-Germain-en-Laye).","Bajar en AUBER.","Desde Auber, 8 minutos a pie hasta Rue Cambon."],
       note:"CRÍTICO: verificar la hora del último tren el mismo día, en la estación." },
 
     "p17a>p17b": { mode:"a pie / taxi", dur:20, dist:"por definir",
@@ -843,13 +864,25 @@ window.TRIP = {
       note:"Distancia y modo dependen del hotel definitivo de París." },
 
     "p17b>p17c": { mode:"rer", line:"RER C", dir:"Versailles Château–Rive Gauche", dur:35, dist:"20 km",
-      steps:["Entrar en la estación Pont de l'Alma, línea RER C.","En el panel, buscar un tren cuyo destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE. No confundir con Versailles-Chantiers ni con Versailles Rive Droite: son otras estaciones y quedan más lejos del Palacio.","Los trenes del RER C llevan un código de cuatro letras. Los que van a Versalles Château empiezan por V. Confirmar en el panel el mismo día.","Bajar en la estación final: Versailles Château–Rive Gauche.","Salir de la estación y caminar unos 10 minutos hasta la Place d'Armes, siguiendo la avenida principal."],
+      steps:["Entrar en la estación Invalides, línea RER C.","En el panel, buscar un tren cuyo destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE. No confundir con Versailles-Chantiers ni con Versailles Rive Droite: son otras estaciones y quedan más lejos del Palacio.","Los trenes del RER C llevan un código de cuatro letras. Los que van a Versalles Château empiezan por V. Confirmar en el panel el mismo día.","Bajar en la estación final: Versailles Château–Rive Gauche.","Salir de la estación y caminar unos 10 minutos hasta la Place d'Armes, siguiendo la avenida principal."],
       note:"Ruta acordada. Verificar frecuencia el día anterior: los fines de semana y festivos cambia." },
+
+    "p14a>p14b": { mode:"taxi", dur:20, dist:"4,5 km",
+      steps:["Taxi desde la puerta del hotel, en Rue Cambon.","Destino: Pont de Bir-Hakeim, lado 15e.","A las 07:00 de un lunes el tráfico todavía es ligero: 20 minutos es realista."],
+      note:"ALTERNATIVA EN METRO (~30 min): caminar 4 min a Concorde, línea 1 dirección La Défense hasta Charles de Gaulle–Étoile, cambiar a línea 6 dirección Nation y bajar en Bir-Hakeim. Verificar andenes en el panel. Con la sesión a las 08:00 en punto, el taxi es la opción segura." },
+
+    "p15a>p15b": { mode:"a pie + RER", dur:12, dist:"600 m a pie",
+      steps:["Caminar unos 8 minutos desde Rue Cambon hasta la estación AUBER.","Auber está en la línea RER A: no hace falta taxi ni transbordo previo."],
+      note:"CAMBIO RESPECTO AL PLAN PRELIMINAR: la ruta anterior era taxi hasta Charles de Gaulle–Étoile. Con el hotel en Rue Cambon, Auber queda a pie y también es RER A directo. Si prefieres el taxi, dímelo y lo revierto." },
+
+    "p17a>p17b": { mode:"a pie", dur:18, dist:"1,3 km",
+      steps:["Caminar desde Rue Cambon hacia Place de la Concorde.","Cruzar el Pont de la Concorde.","Seguir por Quai d'Orsay hasta la estación INVALIDES (RER C)."],
+      note:"CAMBIO RESPECTO AL PLAN PRELIMINAR: la ruta anterior salía de Pont de l'Alma, que queda a 2,5 km del hotel. Invalides está a 18 minutos a pie y es la misma línea RER C hacia Versailles Château–Rive Gauche. Si prefieres Pont de l'Alma, dímelo." },
 
     "p14b>p14c": { mode:"en el sitio", dur:0,
       steps:["Ya estás en el punto de encuentro. Espera junto a la estatua verde, en medio del puente."] },
 
     "p17i>p17j": { mode:"rer", line:"RER C", dir:"hacia París", dur:35, dist:"20 km",
-      steps:["Volver a Versailles Château–Rive Gauche.","Tomar el RER C en dirección París.","Bajar en la estación más conveniente según el hotel definitivo."] }
+      steps:["Volver a Versailles Château–Rive Gauche.","Tomar el RER C en dirección París.","Bajar en Invalides y caminar 18 minutos al hotel, o bajar en Musée d'Orsay si prefieres cenar por Saint-Germain."] }
   }
 };

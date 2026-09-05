@@ -644,6 +644,21 @@ function renderMas() {
     S.simulate = v && v.indexOf(":") > -1 ? toMin(v) : null; save(); render();
   };
   root.appendChild(sim);
+  var upd = el("button", "btn", "BUSCAR VERSIÓN NUEVA");
+  upd.onclick = function () {
+    if (!navigator.onLine) { alert("Necesitas conexión para buscar una versión nueva."); return; }
+    upd.textContent = "Descargando...";
+    var hecho = function () { location.reload(true); };
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+      navigator.serviceWorker.controller.postMessage("limpiar");
+      setTimeout(hecho, 1200);
+    } else if (window.caches) {
+      caches.keys().then(function (k) { return Promise.all(k.map(function (x) { return caches.delete(x); })); }).then(hecho);
+    } else { hecho(); }
+  };
+  root.appendChild(upd);
+  root.appendChild(el("div", "muted", "Úsalo con wifi después de editar el itinerario en GitHub. No borra tu progreso."));
+
   var rst = el("button", "btn ghost sm", "BORRAR PROGRESO DEL VIAJE");
   rst.onclick = function () { if (confirm("¿Borrar todas las marcas de terminado y omitido?")) { S.done = {}; S.skip = {}; save(); render(); } };
   root.appendChild(rst);

@@ -98,7 +98,7 @@ LOCATION:Calle de la Bola 5\, 28013 Madrid
 DESCRIPTION:Madrid\nReserva: La Bola · cocido madrileño · CONFIRMADO\nReserva a las 13:30. Es una comida larga: cuenta 1 h 45 como mínimo.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde FlamencoExport hacia La Bola · 5 min de traslado
+DESCRIPTION:SAL YA desde FlamencoExport · abanicos hacia La Bola · 5 min de traslado
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -396,18 +396,27 @@ TRIGGER:-PT10M
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-UID:s11d@europa2026
+UID:s11d0@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260911T114500
-DTEND;TZID=Europe/Paris:20260911T124500
-SUMMARY:🔒 Free tour por Estocolmo
+DTSTART;TZID=Europe/Paris:20260911T124500
+DTEND;TZID=Europe/Paris:20260911T134500
+SUMMARY:🔒 Gustav Adolfs torg · punto de encuentro
 LOCATION:Gustav Adolfs torg\, Estocolmo
-DESCRIPTION:Estocolmo\nReserva: Free tour por Estocolmo (español) · PENDIENTE\nPunto de encuentro: Plaza Gustav Adolf (Gustav Adolfs torg)\nEl encuentro es en la Plaza Gustav Adolf. Termina en Stortorget\, en Gamla Stan.\n⚠️ PENDIENTE: HORA DE INICIO: DATO PENDIENTE. La hora que ves es provisional y hay que confirmarla — todo el día depende de ella. / Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE
+DESCRIPTION:Estocolmo\nReserva: Free tour por Estocolmo (español) · CONFIRMADO\nPunto de encuentro: Plaza Gustav Adolf (Gustav Adolfs torg)\nLlegar 15 minutos antes. Localizador A41038311. Hoy son 4 personas: se suma el amigo.\n⚠️ PENDIENTE: Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Stadshuset · Ayuntamiento hacia Free tour por Estocolmo · 14 min de traslado
-TRIGGER:-PT24M
+DESCRIPTION:SAL YA desde Comida temprana hacia Gustav Adolfs torg · punto de encuentro · 5 min de traslado
+TRIGGER:-PT15M
 END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s11d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260911T130000
+DTEND;TZID=Europe/Paris:20260911T153000
+SUMMARY:🔒 Free tour por Estocolmo
+LOCATION:De Gustav Adolfs torg a Stortorget
+DESCRIPTION:Estocolmo\nReserva: Free tour por Estocolmo (español) · CONFIRMADO\nPunto de encuentro: Plaza Gustav Adolf (Gustav Adolfs torg)\nTermina en Stortorget\, en el corazón de Gamla Stan: la siguiente parada ya estás ahí.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:En 15 min: Free tour por Estocolmo · Plaza Gustav Adolf (Gustav Adolfs torg)
@@ -581,12 +590,12 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260912T214500
 DTEND;TZID=Europe/Paris:20260912T224500
 SUMMARY:🔒 Hotel en París · check-in
-LOCATION:DIRECCIÓN POR VERIFICAR
-DESCRIPTION:Estocolmo\n⚠️ PENDIENTE: CONFLICTO: confirmar hotel de París (ver ficha de la ciudad)
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
+DESCRIPTION:Estocolmo\nCheck-in a partir de las 15:00. Llegando a esta hora\, la habitación ya está lista.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Ponte en marcha hacia Hotel en París · check-in · traslado sin verificar\, revisa Maps
-TRIGGER:-PT30M
+DESCRIPTION:SAL YA desde Llegada · París-Charles de Gaulle hacia Hotel en París · check-in · 78 min de traslado
+TRIGGER:-PT88M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -666,7 +675,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260913T093000
 DTEND;TZID=Europe/Paris:20260913T094500
 SUMMARY:▶ Salir del hotel · París monumental y el Sena
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:8 Rue Cambon\, 75001 París
 DESCRIPTION:París · París monumental y el Sena
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -685,8 +694,8 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260914T070000
 DTEND;TZID=Europe/Paris:20260914T080000
 SUMMARY:🔒 Salida del hotel
-LOCATION:DIRECCIÓN POR VERIFICAR
-DESCRIPTION:París\nSalir arreglados: la sesión empieza a las 08:00 y no hay margen para volver.\n⚠️ PENDIENTE: Hora de salida provisional: depende del hotel definitivo de París.
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
+DESCRIPTION:París\nSalir arreglados: la sesión empieza a las 08:00 y no hay margen para volver.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:En 15 min: Salida del hotel
@@ -703,7 +712,7 @@ LOCATION:Pont de Bir-Hakeim\, 75015 París
 DESCRIPTION:París\nReserva: Sesión de fotos privada en la Torre Eiffel · PENDIENTE\nPunto de encuentro: Pont de Bir-Hakeim\, 75015 París — en medio del puente\, junto a la estatua verde\nEl punto de encuentro está EN MEDIO DEL PUENTE\, junto a la estatua verde. Por encima pasa la línea 6 del metro\, en el tramo elevado entre Bir-Hakeim y Passy.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:Ponte en marcha hacia Pont de Bir-Hakeim · punto de encuentro · traslado sin verificar\, revisa Maps
+DESCRIPTION:SAL YA desde Salida del hotel hacia Pont de Bir-Hakeim · punto de encuentro · 20 min de traslado
 TRIGGER:-PT30M
 END:VALARM
 BEGIN:VALARM
@@ -765,7 +774,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260914T070000
 DTEND;TZID=Europe/Paris:20260914T071500
 SUMMARY:▶ Salir del hotel · Fotos al amanecer\, Galeries Lafayette y Montmartre
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:8 Rue Cambon\, 75001 París
 DESCRIPTION:París · Fotos al amanecer\, Galeries Lafayette y Montmartre
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -784,7 +793,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260915T073000
 DTEND;TZID=Europe/Paris:20260915T083000
 SUMMARY:🔒 Salida del hotel
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
 DESCRIPTION:París\nDesayuno rápido o comprado la noche anterior. Hoy se madruga.
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -797,17 +806,17 @@ UID:p15b@europa2026
 DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260915T075000
 DTEND;TZID=Europe/Paris:20260915T085000
-SUMMARY:🔒 Charles de Gaulle–Étoile · RER A
-LOCATION:Charles de Gaulle–Étoile\, París
-DESCRIPTION:París\nRuta acordada: taxi desde el hotel hasta Charles de Gaulle–Étoile\, y ahí tomar el RER A directo.\n⚠️ PENDIENTE: Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY.
+SUMMARY:🔒 Estación Auber · RER A
+LOCATION:Estación Auber\, 75009 París
+DESCRIPTION:París\nAuber está a 8 minutos a pie del hotel y es RER A directo a Disney: sin taxi y sin transbordo.\n⚠️ PENDIENTE: Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Salida del hotel hacia Charles de Gaulle–Étoile · RER A · 20 min de traslado
-TRIGGER:-PT30M
+DESCRIPTION:SAL YA desde Salida del hotel hacia Estación Auber · RER A · 12 min de traslado
+TRIGGER:-PT22M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:En 15 min: Charles de Gaulle–Étoile · RER A
+DESCRIPTION:En 15 min: Estación Auber · RER A
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -821,8 +830,8 @@ LOCATION:Marne-la-Vallée–Chessy
 DESCRIPTION:París\nLa estación está literalmente en la entrada del complejo. Salir\, cruzar la explanada\, controles de seguridad\, torniquetes.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Charles de Gaulle–Étoile · RER A hacia Marne-la-Vallée–Chessy · 45 min de traslado
-TRIGGER:-PT55M
+DESCRIPTION:SAL YA desde Estación Auber · RER A hacia Marne-la-Vallée–Chessy · 40 min de traslado
+TRIGGER:-PT50M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -864,7 +873,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260915T073000
 DTEND;TZID=Europe/Paris:20260915T074500
 SUMMARY:▶ Salir del hotel · Disneyland Paris · 1 día\, 2 parques
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:8 Rue Cambon\, 75001 París
 DESCRIPTION:París · Disneyland Paris · 1 día\, 2 parques
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -916,7 +925,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260916T093000
 DTEND;TZID=Europe/Paris:20260916T094500
 SUMMARY:▶ Salir del hotel · Louvre e Île de la Cité
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:8 Rue Cambon\, 75001 París
 DESCRIPTION:París · Louvre e Île de la Cité
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -935,7 +944,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260917T074500
 DTEND;TZID=Europe/Paris:20260917T084500
 SUMMARY:🔒 Salida del hotel
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
 DESCRIPTION:París\nDesayuno rápido. La entrada al Palacio es a las 10:00 y no admite retraso.
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -948,17 +957,17 @@ UID:p17b@europa2026
 DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260917T081000
 DTEND;TZID=Europe/Paris:20260917T091000
-SUMMARY:🔒 Pont de l'Alma · RER C
-LOCATION:Estación Pont de l'Alma\, RER C\, 75008 París
-DESCRIPTION:París\nRuta acordada: hotel → Pont de l'Alma → RER C → Versailles Château–Rive Gauche.\n⚠️ PENDIENTE: ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE\, no Versailles-Chantiers ni Versailles Rive Droite. / Frecuencia y duración exactas del trayecto: DATO PENDIENTE
+SUMMARY:🔒 Estación Invalides · RER C
+LOCATION:Estación Invalides\, RER C\, 75007 París
+DESCRIPTION:París\n18 minutos a pie desde el hotel\, cruzando el Pont de la Concorde. Misma línea RER C hacia Versalles.\n⚠️ PENDIENTE: ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE\, no Versailles-Chantiers ni Versailles Rive Droite. / Frecuencia y duración exactas del trayecto: DATO PENDIENTE
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Salida del hotel hacia Pont de l'Alma · RER C · 20 min de traslado
-TRIGGER:-PT30M
+DESCRIPTION:SAL YA desde Salida del hotel hacia Estación Invalides · RER C · 18 min de traslado
+TRIGGER:-PT28M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:En 15 min: Pont de l'Alma · RER C
+DESCRIPTION:En 15 min: Estación Invalides · RER C
 TRIGGER:-PT15M
 END:VALARM
 END:VEVENT
@@ -972,7 +981,7 @@ LOCATION:Estación Versailles Château–Rive Gauche
 DESCRIPTION:París\nSalir de la estación y caminar unos 10 minutos hasta la Place d'Armes. Está señalizado y la mayoría de la gente va al mismo sitio.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Pont de l'Alma · RER C hacia Versailles Château–Rive Gauche · 35 min de traslado
+DESCRIPTION:SAL YA desde Estación Invalides · RER C hacia Versailles Château–Rive Gauche · 35 min de traslado
 TRIGGER:-PT45M
 END:VALARM
 BEGIN:VALARM
@@ -1039,7 +1048,7 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260917T233000
 DTEND;TZID=Europe/Paris:20260917T243000
 SUMMARY:🔒 Hotel · preparar maletas
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
 DESCRIPTION:París\nMañana es día de aeropuerto.
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1058,8 +1067,79 @@ DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260917T074500
 DTEND;TZID=Europe/Paris:20260917T080000
 SUMMARY:▶ Salir del hotel · Versalles y cena especial
-LOCATION:DIRECCIÓN POR VERIFICAR
+LOCATION:8 Rue Cambon\, 75001 París
 DESCRIPTION:París · Versalles y cena especial
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p18a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260918T060000
+DTEND;TZID=Europe/Paris:20260918T070000
+SUMMARY:🔒 Salida del hotel
+LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
+DESCRIPTION:París\nCheck-out antes de las 12:00\, pero hoy salimos mucho antes. Taxi pedido la noche anterior.\n⚠️ PENDIENTE: Hora calculada sobre un vuelo a las 10:00 SIN CONFIRMAR. Si la hora del vuelo cambia\, esta hora cambia.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida del hotel
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p18b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260918T070000
+DTEND;TZID=Europe/Paris:20260918T080000
+SUMMARY:🔒 Charles de Gaulle
+LOCATION:Aeropuerto Charles de Gaulle (CDG)
+DESCRIPTION:París\nFacturación\, control de seguridad y control de pasaportes (salida del espacio Schengen: añade tiempo).\n⚠️ PENDIENTE: Terminal: DATO PENDIENTE / Puerta de embarque: VERIFICAR EL DÍA DEL VUELO
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Salida del hotel hacia Charles de Gaulle · 78 min de traslado
+TRIGGER:-PT88M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Charles de Gaulle
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p18c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260918T100000
+DTEND;TZID=Europe/Paris:20260918T110000
+SUMMARY:🔒 Vuelo de regreso a Mérida
+LOCATION:Vuelo por confirmar
+DESCRIPTION:París\n⚠️ PENDIENTE: Aerolínea\, número de vuelo\, hora de salida y escalas: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 3 h — salir hacia el aeropuerto
+TRIGGER:-PT180M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 1 h
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d18-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260918T060000
+DTEND;TZID=Europe/Paris:20260918T061500
+SUMMARY:▶ Salir del hotel · París → Mérida
+LOCATION:8 Rue Cambon\, 75001 París
+DESCRIPTION:París · París → Mérida
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Salir del hotel en 30 min

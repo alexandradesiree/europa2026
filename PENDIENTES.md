@@ -1,23 +1,37 @@
-# EUROPA 2026 · LISTA DE DATOS PENDIENTES
+# EUROPA 2026 · DATOS PENDIENTES
 
 Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y que no se inventó.
 
 ---
 
-## Conflictos abiertos (requieren tu decisión)
+## Conflictos y datos provisionales (requieren tu decisión)
 
-- **París · hotel** — CONFLICTO ABIERTO: el registro anterior indicaba «Villa Marquis, Meliá Collection, 35 Rue Jean Goujon, 75008». Tu última instrucción indica «Meliá Paris Vendôme». Confirma cuál es y su dirección exacta: TODOS los traslados de París parten de aquí.
-- **07 septiembre · FlamencoExport** — ROL DE ESTA PARADA POR CONFIRMAR: aparece en tus instrucciones como integrada en la ruta del lunes, pero no consta si es recogida de entradas, espectáculo o punto de encuentro. Confirma qué se hace aquí y a qué hora.
-- **11 septiembre · Skeppsholmen** — POSICIÓN EN EL DÍA POR CONFIRMAR: aparece en tus instrucciones pero no consta en qué momento quedó dentro de la jornada del viernes. Colocado aquí de forma provisional como parada opcional.
-- **12 septiembre · Hotel en París · check-in** — CONFLICTO: confirmar hotel de París (ver ficha de la ciudad)
+- **07 septiembre · FlamencoExport · abanicos** — CONFLICTO DE HORARIO: dijiste que iba después de Cardamomo, pero el tablao termina hacia las 22:30 y la tienda estará cerrada. La coloqué entre la Almudena y La Bola, que es donde encaja geográficamente. Si prefieres otro momento, dímelo.
+- **11 septiembre · Skeppsholmen** — POSICIÓN EN EL DÍA POR CONFIRMAR: no consta en qué momento quedó dentro de la jornada. Colocada aquí como opcional.
+- **18 septiembre · Salida del hotel** — Hora calculada sobre un vuelo a las 10:00 SIN CONFIRMAR. Si la hora del vuelo cambia, esta hora cambia.
 - **Sesión de fotos privada en la Torre Eiffel** — CONFIRMAR SI LA COMPRA SE COMPLETÓ: la captura es la pantalla de pago de GetYourGuide, no el comprobante final. Si ya está pagada, cambia status a pagado.
+- **París-Charles de Gaulle (CDG) → Mérida (MID)** — HORA PROVISIONAL: 10:00 dicho de memoria, sin comprobante. Confirmar con el boleto.
 
 ## Reservas sin confirmar
 
 - **ICEBAR Stockholm** — 09 septiembre 21:00
-- **Free tour por Estocolmo (español)** — 11 septiembre
 - **Crucero por el archipiélago · Strömma** — 12 septiembre 10:30
 - **Sesión de fotos privada en la Torre Eiffel** — 14 septiembre 08:00
+
+## Reservas confirmadas
+
+- Palacio Real de Madrid · visita guiada — 07 septiembre 11:00 · CONFIRMADO
+- La Bola · cocido madrileño — 07 septiembre 13:30 · CONFIRMADO
+- Cardamomo · tablao flamenco — 07 septiembre · CONFIRMADO
+- Museo Nacional del Prado — 08 septiembre 12:00 · CONFIRMADO
+- Visita a la fábrica FX Airguns · Mariestad — 10 septiembre 11:00 · CONFIRMADO
+- Free tour por Estocolmo (español) — 11 septiembre 13:00 · A41038311 · CONFIRMADO
+- Free tour Arco del Triunfo y Campos Elíseos (español) — 13 septiembre 16:30 · A41342195 · CONFIRMADO
+- Bateaux Parisiens · crucero por el Sena — 13 septiembre 19:00 · PAGADO
+- Free tour Montmartre (español) — 14 septiembre 15:45 · A41342138 · CONFIRMADO
+- Disneyland Paris · 1 día, 2 parques — 15 septiembre · PAGADO
+- Museo del Louvre — 16 septiembre 11:30 · PAGADO
+- Versailles Passport — 17 septiembre 10:00 · PAGADO
 
 ## Datos pendientes por día
 
@@ -35,7 +49,8 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 |---|---|---|
 | 09:15 | Desayuno | Local del desayuno: DATO PENDIENTE (San Ginés está aprobado para churros, sin día asignado) |
 | 10:45 | Palacio Real · llegada | Puerta de acceso para visitas guiadas: VERIFICAR EN COMPROBANTE |
-| 13:05 | FlamencoExport | Coordenadas aproximadas: verificar |
+| 13:00 | FlamencoExport · abanicos | Horario de apertura de la tienda: DATO PENDIENTE |
+| 13:00 | FlamencoExport · abanicos | Coordenadas aproximadas: verificar |
 | 19:30 | Cena ligera | Local: DATO PENDIENTE |
 | 21:00 | Cardamomo · tablao flamenco | Hora exacta del espectáculo: VERIFICAR EN COMPROBANTE. La hora mostrada (21:00) es provisional. |
 
@@ -74,9 +89,11 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 |---|---|---|
 | 09:00 | Desayuno | Local: DATO PENDIENTE |
 | 10:00 | Stadshuset · Ayuntamiento | Horario de la visita guiada en español o inglés: DATO PENDIENTE |
-| 11:45 | Free tour por Estocolmo | HORA DE INICIO: DATO PENDIENTE. La hora que ves es provisional y hay que confirmarla — todo el día depende de ella. |
-| 11:45 | Free tour por Estocolmo | Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE |
-| 18:45 | Tunnbrödsrulle en un gatukök | GATUKÖK CONCRETO POR ELEGIR. Criterios acordados: autenticidad, horario real de apertura, y ruta natural desde Monteliusvägen — máximo 1–1,5 km adicionales. |
+| 11:45 | Comida temprana | Restaurante: DATO PENDIENTE. Debe quedar en la línea Stadshuset → Gustav Adolfs torg, sin desvío. |
+| 12:45 | Gustav Adolfs torg · punto de encuentro | Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE |
+| 17:15 | Drop Coffee | Horario de cierre: VERIFICAR. Muchos cafés de especialidad en Estocolmo cierran a las 17:00 o 18:00. Si cierra antes, hay que adelantarlo o cambiarlo. |
+| 19:30 | Tunnbrödsrulle en un gatukök | GATUKÖK CONCRETO POR ELEGIR. Criterios acordados: autenticidad, horario real de apertura y ruta natural desde Monteliusvägen — máximo 1–1,5 km adicionales. |
+| 20:30 | Hotel C Stockholm | El regreso pasó de 19:45–20:00 a 20:30 porque el tour es a las 13:00, no a mediodía. Si quieres volver antes, lo que cae es Skeppsholmen. |
 
 ### Sábado 12 septiembre · Crucero por el archipiélago y vuelo a París
 
@@ -94,7 +111,7 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 |---|---|---|
 | 09:30 | Hotel | Confirmar hotel: todos los traslados de hoy parten de aquí |
 | 10:00 | Desayuno | Boulangerie o café: DATO PENDIENTE |
-| 12:10 | Jardín de las Tullerías | Confirmar si el globo olímpico sigue en pie en septiembre de 2026 |
+| 10:30 | Jardín de las Tullerías | Confirmar si el globo olímpico sigue en pie en septiembre de 2026 |
 | 13:15 | Comida | Restaurante: DATO PENDIENTE |
 | 16:30 | Free tour Arco y Campos Elíseos | PUNTO EXACTO DE ENCUENTRO Y REFERENCIA VISUAL: VERIFICAR EN COMPROBANTE. No lo invento. |
 | 16:30 | Free tour Arco y Campos Elíseos | Hora exacta de finalización: estimada en 18:30 |
@@ -104,7 +121,6 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 
 | Hora | Parada | Qué falta |
 |---|---|---|
-| 07:00 | Salida del hotel | Hora de salida provisional: depende del hotel definitivo de París. |
 | 08:00 | Sesión de fotos en la Torre Eiffel | Duración real de la sesión: DATO PENDIENTE. El bloque de una hora es provisional. |
 | 09:15 | Desayuno especial | Local sin cerrar. Candidato registrado: La Cuisine (Royal Monceau). Con la sesión terminando en Bir-Hakeim, conviene un sitio de camino a Haussmann, no un desvío. |
 | 09:15 | Desayuno especial | CONSECUENCIA DEL NUEVO HORARIO: Galeries Lafayette se movió de 10:00 a 10:30. |
@@ -116,7 +132,7 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 
 | Hora | Parada | Qué falta |
 |---|---|---|
-| 07:50 | Charles de Gaulle–Étoile · RER A | Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY. |
+| 07:50 | Estación Auber · RER A | Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY. |
 | 09:15 | Entrada a los parques | HORA DE APERTURA del 15 de septiembre: VERIFICAR unos días antes. La hora mostrada es provisional. |
 | 09:15 | Entrada a los parques | ORDEN DE ATRACCIONES POR PRIORIDAD (🔴 A / 🟠 B / ⚪ opcional): DATO PENDIENTE. No lo invento — hay que definirlo con el mapa y los horarios reales del día. |
 | 09:15 | Entrada a los parques | Crush's Coaster está CERRADO desde el 7 de septiembre de 2026 hasta verano de 2027. |
@@ -140,8 +156,8 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 
 | Hora | Parada | Qué falta |
 |---|---|---|
-| 08:10 | Pont de l'Alma · RER C | ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE, no Versailles-Chantiers ni Versailles Rive Droite. |
-| 08:10 | Pont de l'Alma · RER C | Frecuencia y duración exactas del trayecto: DATO PENDIENTE |
+| 08:10 | Estación Invalides · RER C | ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE, no Versailles-Chantiers ni Versailles Rive Droite. |
+| 08:10 | Estación Invalides · RER C | Frecuencia y duración exactas del trayecto: DATO PENDIENTE |
 | 09:40 | Place d'Armes · acceso al Palacio | Confirmar entrada exacta asignada en el comprobante |
 | 12:30 | Jardines de Versalles | Horario de la Flotilla (barcas del Gran Canal) y de los espectáculos de fuentes: DATO PENDIENTE. Este es el único dato interno de Versalles sin confirmar. |
 | 14:00 | Comida en Versalles | Restaurante: DATO PENDIENTE |
@@ -151,12 +167,6 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 
 | Hora | Parada | Qué falta |
 |---|---|---|
-| — | Salida del hotel | HORA DE SALIDA NO CALCULABLE: falta la hora del vuelo de regreso. Regla: salir del hotel 4 h antes de la salida del vuelo para un vuelo transatlántico desde CDG. |
-| — | Charles de Gaulle | Terminal: DATO PENDIENTE |
-| — | Charles de Gaulle | Puerta de embarque: VERIFICAR EL DÍA DEL VUELO |
-| — | Vuelo de regreso a Mérida | Aerolínea, número de vuelo, hora de salida y escalas: DATO PENDIENTE |
-
-## Vuelos
-
-- **Mérida (MID) → Madrid-Barajas (MAD)** (05 septiembre) — Aerolínea, número de vuelo y terminales: VERIFICAR EN COMPROBANTE
-- **París-Charles de Gaulle (CDG) → Mérida (MID)** (18 septiembre) — Número de vuelo, hora de salida y terminal: DATO PENDIENTE. Sin la hora de salida no puedo calcular la hora de salida del hotel el viernes 18.
+| 07:00 | Charles de Gaulle | Terminal: DATO PENDIENTE |
+| 07:00 | Charles de Gaulle | Puerta de embarque: VERIFICAR EL DÍA DEL VUELO |
+| 10:00 | Vuelo de regreso a Mérida | Aerolínea, número de vuelo, hora de salida y escalas: DATO PENDIENTE |
