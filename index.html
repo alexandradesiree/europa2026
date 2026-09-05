@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=1">
+<title>EUROPA 2026</title>
+<meta name="theme-color" content="#12233D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Europa 2026">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="offline">Sin conexión · el itinerario, las rutas y las reservas siguen disponibles</div>
+
+<header class="topbar">
+  <div class="row">
+    <div>
+      <div class="city" id="topCity">EUROPA 2026</div>
+      <div class="meta" id="topMeta"></div>
+    </div>
+    <div class="clock tabular" id="topClock"></div>
+  </div>
+</header>
+
+<main>
+  <section class="screen on" id="hoy"></section>
+  <section class="screen" id="viaje"></section>
+  <section class="screen" id="mapa"></section>
+  <section class="screen" id="reservas"></section>
+  <section class="screen" id="mas"></section>
+</main>
+
+<div class="sheet" id="sheet"></div>
+
+<nav class="nav">
+  <button id="nav-hoy" class="on"><span class="ic">●</span>HOY</button>
+  <button id="nav-viaje"><span class="ic">▤</span>VIAJE</button>
+  <button id="nav-mapa"><span class="ic">◎</span>MAPA</button>
+  <button id="nav-reservas"><span class="ic">🎫</span>RESERVAS</button>
+  <button id="nav-mas"><span class="ic">⋯</span>MÁS</button>
+</nav>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1074 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//EUROPA 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:EUROPA 2026
+X-WR-TIMEZONE:Europe/Paris
+BEGIN:VTIMEZONE
+TZID:Europe/Paris
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:m06a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260906T150000
+DTEND;TZID=Europe/Paris:20260906T160000
+SUMMARY:🔒 Llegada · Madrid-Barajas T4
+LOCATION:Terminal 4\, Aeropuerto Adolfo Suárez Madrid-Barajas
+DESCRIPTION:Madrid\nRecoger equipaje documentado y salir a la zona de taxis o al Metro línea 8.\n⚠️ PENDIENTE: Modo de traslado del aeropuerto al hotel: DATO PENDIENTE (taxi tarifa fija ~30 € o Metro L8 + L1)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Llegada · Madrid-Barajas T4
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d06-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260906T163000
+DTEND;TZID=Europe/Paris:20260906T164500
+SUMMARY:▶ Salir del hotel · Llegada y Madrid de los Austrias
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid · Llegada y Madrid de los Austrias
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m07c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260907T104500
+DTEND;TZID=Europe/Paris:20260907T114500
+SUMMARY:🔒 Palacio Real · llegada
+LOCATION:Calle de Bailén s/n\, 28071 Madrid
+DESCRIPTION:Madrid\nReserva: Palacio Real de Madrid · visita guiada · CONFIRMADO\nPunto de encuentro: VERIFICAR EN COMPROBANTE\nLlegar 15 minutos antes del acceso. Pasar control de seguridad.\n⚠️ PENDIENTE: Puerta de acceso para visitas guiadas: VERIFICAR EN COMPROBANTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Desayuno hacia Palacio Real · llegada · 11 min de traslado
+TRIGGER:-PT21M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Palacio Real · llegada · VERIFICAR EN COMPROBANTE
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m07d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260907T110000
+DTEND;TZID=Europe/Paris:20260907T123000
+SUMMARY:🔒 Palacio Real · visita guiada
+LOCATION:Calle de Bailén s/n\, Madrid
+DESCRIPTION:Madrid\nReserva: Palacio Real de Madrid · visita guiada · CONFIRMADO\nPunto de encuentro: VERIFICAR EN COMPROBANTE\nVisita guiada. No se permiten fotos en el interior en la mayoría de las salas.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Palacio Real · visita guiada · VERIFICAR EN COMPROBANTE
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m07g@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260907T133000
+DTEND;TZID=Europe/Paris:20260907T151500
+SUMMARY:🔒 La Bola
+LOCATION:Calle de la Bola 5\, 28013 Madrid
+DESCRIPTION:Madrid\nReserva: La Bola · cocido madrileño · CONFIRMADO\nReserva a las 13:30. Es una comida larga: cuenta 1 h 45 como mínimo.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde FlamencoExport hacia La Bola · 5 min de traslado
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m07l@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260907T210000
+DTEND;TZID=Europe/Paris:20260907T220000
+SUMMARY:🔒 Cardamomo · tablao flamenco
+LOCATION:Calle de Echegaray 15\, 28014 Madrid
+DESCRIPTION:Madrid\nReserva: Cardamomo · tablao flamenco · CONFIRMADO\nLlegar 20–30 minutos antes: la colocación en la sala suele ser por orden de llegada.\n⚠️ PENDIENTE: Hora exacta del espectáculo: VERIFICAR EN COMPROBANTE. La hora mostrada (21:00) es provisional.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Cena ligera hacia Cardamomo · tablao flamenco · 5 min de traslado
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d07-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260907T090000
+DTEND;TZID=Europe/Paris:20260907T091500
+SUMMARY:▶ Salir del hotel · Palacio Real\, cocido y flamenco
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid · Palacio Real\, cocido y flamenco
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m08e@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260908T114500
+DTEND;TZID=Europe/Paris:20260908T124500
+SUMMARY:🔒 Museo del Prado · llegada
+LOCATION:Calle de Ruiz de Alarcón 23\, Madrid
+DESCRIPTION:Madrid\nReserva: Museo Nacional del Prado · CONFIRMADO\nLlegar 15 minutos antes. Acceso recomendado por la Puerta de los Jerónimos.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Parque del Retiro hacia Museo del Prado · llegada · 13 min de traslado
+TRIGGER:-PT23M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Museo del Prado · llegada
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m08f@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260908T120000
+DTEND;TZID=Europe/Paris:20260908T143000
+SUMMARY:🔒 Museo del Prado
+LOCATION:Calle de Ruiz de Alarcón 23\, Madrid
+DESCRIPTION:Madrid\nReserva: Museo Nacional del Prado · CONFIRMADO\nDos horas y media\, solo grandes obras. No intentes verlo entero.\n⚠️ PENDIENTE: Recorrido interno optimizado sala por sala: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Museo del Prado
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m08l@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260908T230000
+DTEND;TZID=Europe/Paris:20260908T240000
+SUMMARY:🔒 Hotel · preparar maletas
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid\nMaletas cerradas esta noche. Mañana se sale del hotel a las 07:45.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Última cena en Madrid hacia Hotel · preparar maletas · 5 min de traslado
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d08-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260908T091500
+DTEND;TZID=Europe/Paris:20260908T093000
+SUMMARY:▶ Salir del hotel · El Madrid ilustrado: Cibeles\, Retiro y Prado
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid · El Madrid ilustrado: Cibeles\, Retiro y Prado
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T074500
+DTEND;TZID=Europe/Paris:20260909T084500
+SUMMARY:🔒 Salida del hotel
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid\nCheck-out la noche anterior si es posible. Taxi pedido con antelación.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida del hotel
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T082000
+DTEND;TZID=Europe/Paris:20260909T092000
+SUMMARY:🔒 Barajas Terminal 4
+LOCATION:Terminal 4\, Aeropuerto Adolfo Suárez Madrid-Barajas
+DESCRIPTION:Madrid\nFacturar equipaje\, control de seguridad. Confirmado que IB823 opera desde T4.\n⚠️ PENDIENTE: Puerta de embarque: VERIFICAR EL DÍA DEL VUELO
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Salida del hotel hacia Barajas Terminal 4 · 35 min de traslado
+TRIGGER:-PT45M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Barajas Terminal 4
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T101500
+DTEND;TZID=Europe/Paris:20260909T111500
+SUMMARY:🔒 Vuelo IB823 · Madrid → Estocolmo
+LOCATION:IB823
+DESCRIPTION:Madrid\nSalida 10:15 · llegada 14:10.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 3 h — salir hacia el aeropuerto
+TRIGGER:-PT180M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 1 h
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T141000
+DTEND;TZID=Europe/Paris:20260909T151000
+SUMMARY:🔒 Llegada · Estocolmo-Arlanda
+LOCATION:Aeropuerto de Arlanda (ARN)
+DESCRIPTION:Madrid\nRecoger equipaje y bajar al Arlanda Express o al bus Flygbussarna.\n⚠️ PENDIENTE: Modo de traslado ARN → Hotel C elegido: DATO PENDIENTE. Arlanda Express llega a la Estación Central\, a 2 minutos a pie del hotel.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Llegada · Estocolmo-Arlanda · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Llegada · Estocolmo-Arlanda
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09e@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T153000
+DTEND;TZID=Europe/Paris:20260909T163000
+SUMMARY:🔒 Hotel C Stockholm
+LOCATION:Vasaplan 4\, 111 20 Estocolmo
+DESCRIPTION:Madrid\nCheck-in. El hotel está pegado a la Estación Central.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Llegada · Estocolmo-Arlanda hacia Hotel C Stockholm · 119 min de traslado
+TRIGGER:-PT129M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Hotel C Stockholm
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:m09i@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T210000
+DTEND;TZID=Europe/Paris:20260909T220000
+SUMMARY:ICEBAR Stockholm
+LOCATION:Vasaplan 4 (dentro del Hotel C)
+DESCRIPTION:Madrid\nReserva: ICEBAR Stockholm · PENDIENTE\nDan poncho térmico y guantes. La visita dura unos 45 minutos y la primera bebida suele ir incluida.\n⚠️ PENDIENTE: No consta reservado. Confirmar disponibilidad.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: ICEBAR Stockholm
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d09-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260909T074500
+DTEND;TZID=Europe/Paris:20260909T080000
+SUMMARY:▶ Salir del hotel · Madrid → Estocolmo
+LOCATION:Calle de Sevilla 4\, 28014 Madrid
+DESCRIPTION:Madrid · Madrid → Estocolmo
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s10a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260910T064500
+DTEND;TZID=Europe/Paris:20260910T074500
+SUMMARY:🔒 Salida de Estocolmo en auto
+LOCATION:Hotel C Stockholm\, Vasaplan 4
+DESCRIPTION:Estocolmo\nEl amigo pasa por el hotel. Son unos 300 km hasta Mariestad.\n⚠️ PENDIENTE: Hora exacta de salida acordada con el amigo: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida de Estocolmo en auto
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s10b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260910T110000
+DTEND;TZID=Europe/Paris:20260910T120000
+SUMMARY:🔒 Fábrica FX Airguns · Mariestad
+LOCATION:Mariestad\, Suecia
+DESCRIPTION:Estocolmo\nReserva: Visita a la fábrica FX Airguns · Mariestad · CONFIRMADO\nFX confirmó que hay que estar en la fábrica a las 11:00.\n⚠️ PENDIENTE: Dirección exacta\, persona de contacto y duración de la visita: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Salida de Estocolmo en auto hacia Fábrica FX Airguns · Mariestad · 767 min de traslado
+TRIGGER:-PT777M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Fábrica FX Airguns · Mariestad
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s10e@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260910T200000
+DTEND;TZID=Europe/Paris:20260910T210000
+SUMMARY:🔒 Regreso al Hotel C Stockholm
+LOCATION:Vasaplan 4\, Estocolmo
+DESCRIPTION:Estocolmo\n⚠️ PENDIENTE: Hora estimada de regreso: DATO PENDIENTE (depende de la hora de salida de Mariestad)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Mariestad · centro y lago Vänern hacia Regreso al Hotel C Stockholm · 767 min de traslado
+TRIGGER:-PT777M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Regreso al Hotel C Stockholm
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d10-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260910T064500
+DTEND;TZID=Europe/Paris:20260910T070000
+SUMMARY:▶ Salir del hotel · Mariestad · fábrica FX Airguns
+LOCATION:Vasaplan 4\, 111 20 Estocolmo
+DESCRIPTION:Estocolmo · Mariestad · fábrica FX Airguns
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s11d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260911T114500
+DTEND;TZID=Europe/Paris:20260911T124500
+SUMMARY:🔒 Free tour por Estocolmo
+LOCATION:Gustav Adolfs torg\, Estocolmo
+DESCRIPTION:Estocolmo\nReserva: Free tour por Estocolmo (español) · PENDIENTE\nPunto de encuentro: Plaza Gustav Adolf (Gustav Adolfs torg)\nEl encuentro es en la Plaza Gustav Adolf. Termina en Stortorget\, en Gamla Stan.\n⚠️ PENDIENTE: HORA DE INICIO: DATO PENDIENTE. La hora que ves es provisional y hay que confirmarla — todo el día depende de ella. / Punto exacto dentro de la plaza y referencia visual del guía: VERIFICAR EN COMPROBANTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Stadshuset · Ayuntamiento hacia Free tour por Estocolmo · 14 min de traslado
+TRIGGER:-PT24M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Free tour por Estocolmo · Plaza Gustav Adolf (Gustav Adolfs torg)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d11-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260911T084500
+DTEND;TZID=Europe/Paris:20260911T090000
+SUMMARY:▶ Salir del hotel · Estocolmo a pie: Gamla Stan\, café y miradores
+LOCATION:Vasaplan 4\, 111 20 Estocolmo
+DESCRIPTION:Estocolmo · Estocolmo a pie: Gamla Stan\, café y miradores
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T090000
+DTEND;TZID=Europe/Paris:20260912T100000
+SUMMARY:🔒 Check-out · Hotel C Stockholm
+LOCATION:Vasaplan 4\, Estocolmo
+DESCRIPTION:Estocolmo\nCheck-out con maletas. Dejarlas en consigna del hotel: volvemos a pasar por aquí camino del aeropuerto.\n⚠️ PENDIENTE: Confirmar que el hotel guarda equipaje después del check-out
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Check-out · Hotel C Stockholm
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T101500
+DTEND;TZID=Europe/Paris:20260912T111500
+SUMMARY:🔒 Muelle 15 · Strandvägen
+LOCATION:Strandvägen\, muelle 15\, Estocolmo
+DESCRIPTION:Estocolmo\nReserva: Crucero por el archipiélago · Strömma · PENDIENTE\nPunto de encuentro: Strandvägen\, MUELLE 15\nLlegar 15 minutos antes del embarque. Buscar el barco M/S Östanå I.\n⚠️ PENDIENTE: Coordenadas exactas del muelle 15: verificar. Strandvägen tiene varios embarcaderos numerados seguidos.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Vete-Katten hacia Muelle 15 · Strandvägen · 19 min de traslado
+TRIGGER:-PT29M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Muelle 15 · Strandvägen · Strandvägen\, MUELLE 15
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T103000
+DTEND;TZID=Europe/Paris:20260912T130000
+SUMMARY:🔒 Crucero por el archipiélago
+LOCATION:Salida desde Strandvägen\, muelle 15
+DESCRIPTION:Estocolmo\nReserva: Crucero por el archipiélago · Strömma · PENDIENTE\nPunto de encuentro: Strandvägen\, MUELLE 15\nBarco M/S Östanå I. Siéntense en cubierta si el clima lo permite\; llevar capa extra\, en el agua hace más frío.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Crucero por el archipiélago · Strandvägen\, MUELLE 15
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12e@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T133000
+DTEND;TZID=Europe/Paris:20260912T143000
+SUMMARY:🔒 CORTE OPERATIVO · recoger equipaje
+LOCATION:Hotel C Stockholm\, Vasaplan 4
+DESCRIPTION:Estocolmo\nA partir de aquí el día es exclusivamente traslado. No añadir nada.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Crucero por el archipiélago hacia CORTE OPERATIVO · recoger equipaje · 18 min de traslado
+TRIGGER:-PT28M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: CORTE OPERATIVO · recoger equipaje
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12f@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T141500
+DTEND;TZID=Europe/Paris:20260912T151500
+SUMMARY:🔒 Traslado al aeropuerto de Arlanda
+LOCATION:Aeropuerto de Arlanda (ARN)
+DESCRIPTION:Estocolmo\nArlanda Express desde la Estación Central: 20 minutos\, sale cada 10–15 minutos. El hotel está a 2 minutos a pie de la estación.\n⚠️ PENDIENTE: Devolución del auto al amigo / garaje AIMO Park (Birger Jarlsgatan 6): confirmar si esta gestión ocurre hoy y a qué hora.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde CORTE OPERATIVO · recoger equipaje hacia Traslado al aeropuerto de Arlanda · 119 min de traslado
+TRIGGER:-PT129M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Traslado al aeropuerto de Arlanda
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12g@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T152000
+DTEND;TZID=Europe/Paris:20260912T162000
+SUMMARY:🔒 Arlanda · facturación y seguridad
+LOCATION:Arlanda (ARN)
+DESCRIPTION:Estocolmo\n⚠️ PENDIENTE: Terminal de salida de SK579 y puerta de embarque: VERIFICAR EL DÍA DEL VUELO
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Traslado al aeropuerto de Arlanda hacia Arlanda · facturación y seguridad · 20 min de traslado
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Arlanda · facturación y seguridad
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12h@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T175000
+DTEND;TZID=Europe/Paris:20260912T185000
+SUMMARY:🔒 Vuelo SK579 · Estocolmo → París
+LOCATION:SK579
+DESCRIPTION:Estocolmo\nSalida 17:50 · llegada CDG 20:25.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 3 h — salir hacia el aeropuerto
+TRIGGER:-PT180M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Vuelo en 1 h
+TRIGGER:-PT60M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12i@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T202500
+DTEND;TZID=Europe/Paris:20260912T212500
+SUMMARY:🔒 Llegada · París-Charles de Gaulle
+LOCATION:Aeropuerto Charles de Gaulle (CDG)
+DESCRIPTION:Estocolmo\nRecoger equipaje y traslado al hotel.\n⚠️ PENDIENTE: Modo de traslado CDG → hotel: DATO PENDIENTE. A esa hora el taxi tarifa fija a la orilla derecha (~56 €) es lo más razonable con maletas.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Llegada · París-Charles de Gaulle · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Llegada · París-Charles de Gaulle
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:s12j@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T214500
+DTEND;TZID=Europe/Paris:20260912T224500
+SUMMARY:🔒 Hotel en París · check-in
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:Estocolmo\n⚠️ PENDIENTE: CONFLICTO: confirmar hotel de París (ver ficha de la ciudad)
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Hotel en París · check-in · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Hotel en París · check-in
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d12-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260912T090000
+DTEND;TZID=Europe/Paris:20260912T091500
+SUMMARY:▶ Salir del hotel · Crucero por el archipiélago y vuelo a París
+LOCATION:Vasaplan 4\, 111 20 Estocolmo
+DESCRIPTION:Estocolmo · Crucero por el archipiélago y vuelo a París
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p13j@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260913T163000
+DTEND;TZID=Europe/Paris:20260913T183000
+SUMMARY:🔒 Free tour Arco y Campos Elíseos
+LOCATION:Zona Arco del Triunfo
+DESCRIPTION:París\nReserva: Free tour Arco del Triunfo y Campos Elíseos (español) · CONFIRMADO\nPunto de encuentro: VERIFICAR EN COMPROBANTE\nLlegar 15 minutos antes.\n⚠️ PENDIENTE: PUNTO EXACTO DE ENCUENTRO Y REFERENCIA VISUAL: VERIFICAR EN COMPROBANTE. No lo invento. / Hora exacta de finalización: estimada en 18:30
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Free tour Arco y Campos Elíseos · VERIFICAR EN COMPROBANTE
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p13l@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260913T185500
+DTEND;TZID=Europe/Paris:20260913T195500
+SUMMARY:🔒 Port de la Bourdonnais · embarque
+LOCATION:Port de la Bourdonnais\, 75007 París
+DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nBajar del Trocadéro cruzando el Pont d'Iéna. Objetivo: estar aquí a las 18:55.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Trocadéro · fotos de la Torre Eiffel hacia Port de la Bourdonnais · embarque · 11 min de traslado
+TRIGGER:-PT21M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Port de la Bourdonnais · embarque · Port de la Bourdonnais\, 75007 París
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p13m@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260913T190000
+DTEND;TZID=Europe/Paris:20260913T201000
+SUMMARY:🔒 Crucero Bateaux Parisiens
+LOCATION:Port de la Bourdonnais\, 75007 París
+DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nBoleto de horario abierto: el objetivo es el de las 19:00. Si no entramos\, el plan B es el de las 20:00.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Crucero Bateaux Parisiens · Port de la Bourdonnais\, 75007 París
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d13-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260913T093000
+DTEND;TZID=Europe/Paris:20260913T094500
+SUMMARY:▶ Salir del hotel · París monumental y el Sena
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París · París monumental y el Sena
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p14a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T070000
+DTEND;TZID=Europe/Paris:20260914T080000
+SUMMARY:🔒 Salida del hotel
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París\nSalir arreglados: la sesión empieza a las 08:00 y no hay margen para volver.\n⚠️ PENDIENTE: Hora de salida provisional: depende del hotel definitivo de París.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida del hotel
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p14b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T074500
+DTEND;TZID=Europe/Paris:20260914T084500
+SUMMARY:🔒 Pont de Bir-Hakeim · punto de encuentro
+LOCATION:Pont de Bir-Hakeim\, 75015 París
+DESCRIPTION:París\nReserva: Sesión de fotos privada en la Torre Eiffel · PENDIENTE\nPunto de encuentro: Pont de Bir-Hakeim\, 75015 París — en medio del puente\, junto a la estatua verde\nEl punto de encuentro está EN MEDIO DEL PUENTE\, junto a la estatua verde. Por encima pasa la línea 6 del metro\, en el tramo elevado entre Bir-Hakeim y Passy.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Pont de Bir-Hakeim · punto de encuentro · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Pont de Bir-Hakeim · punto de encuentro · Pont de Bir-Hakeim\, 75015 París — en medio del puente\, junto a la estatua verde
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p14c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T080000
+DTEND;TZID=Europe/Paris:20260914T090000
+SUMMARY:🔒 Sesión de fotos en la Torre Eiffel
+LOCATION:Pont de Bir-Hakeim\, 75015 París
+DESCRIPTION:París\nReserva: Sesión de fotos privada en la Torre Eiffel · PENDIENTE\nPunto de encuentro: Pont de Bir-Hakeim\, 75015 París — en medio del puente\, junto a la estatua verde\nA las 08:00 de un lunes de septiembre la luz es baja y el puente está mucho menos concurrido que a media mañana.\n⚠️ PENDIENTE: Duración real de la sesión: DATO PENDIENTE. El bloque de una hora es provisional.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Sesión de fotos en la Torre Eiffel · Pont de Bir-Hakeim\, 75015 París — en medio del puente\, junto a la estatua verde
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p14g@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T153000
+DTEND;TZID=Europe/Paris:20260914T163000
+SUMMARY:🔒 Place Blanche · punto de encuentro
+LOCATION:Place Blanche\, 75018 París
+DESCRIPTION:París\nReserva: Free tour Montmartre (español) · CONFIRMADO\nPunto de encuentro: Place Blanche (frente al Moulin Rouge)\nLlegar 15 minutos antes. La plaza se reconoce de inmediato: el Moulin Rouge con su molino rojo está justo ahí.\n⚠️ PENDIENTE: Referencia visual del guía (paraguas\, cartel\, color): VERIFICAR EN COMPROBANTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Galerie Vivienne y Palais-Royal hacia Place Blanche · punto de encuentro · 29 min de traslado
+TRIGGER:-PT39M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Place Blanche · punto de encuentro · Place Blanche (frente al Moulin Rouge)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p14h@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T154500
+DTEND;TZID=Europe/Paris:20260914T181500
+SUMMARY:🔒 Free tour Montmartre
+LOCATION:De Place Blanche a Sacré-Cœur
+DESCRIPTION:París\nReserva: Free tour Montmartre (español) · CONFIRMADO\nPunto de encuentro: Place Blanche (frente al Moulin Rouge)\nTermina hacia las 18:15 en Sacré-Cœur.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Free tour Montmartre · Place Blanche (frente al Moulin Rouge)
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d14-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260914T070000
+DTEND;TZID=Europe/Paris:20260914T071500
+SUMMARY:▶ Salir del hotel · Fotos al amanecer\, Galeries Lafayette y Montmartre
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París · Fotos al amanecer\, Galeries Lafayette y Montmartre
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p15a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T073000
+DTEND;TZID=Europe/Paris:20260915T083000
+SUMMARY:🔒 Salida del hotel
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París\nDesayuno rápido o comprado la noche anterior. Hoy se madruga.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida del hotel
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p15b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T075000
+DTEND;TZID=Europe/Paris:20260915T085000
+SUMMARY:🔒 Charles de Gaulle–Étoile · RER A
+LOCATION:Charles de Gaulle–Étoile\, París
+DESCRIPTION:París\nRuta acordada: taxi desde el hotel hasta Charles de Gaulle–Étoile\, y ahí tomar el RER A directo.\n⚠️ PENDIENTE: Andén exacto del RER A dirección Marne-la-Vallée: verificar en el panel. No todos los trenes de la línea A llegan a Chessy — el destino debe decir MARNE-LA-VALLÉE–CHESSY.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Salida del hotel hacia Charles de Gaulle–Étoile · RER A · 20 min de traslado
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Charles de Gaulle–Étoile · RER A
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p15c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T084500
+DTEND;TZID=Europe/Paris:20260915T094500
+SUMMARY:🔒 Marne-la-Vallée–Chessy
+LOCATION:Marne-la-Vallée–Chessy
+DESCRIPTION:París\nLa estación está literalmente en la entrada del complejo. Salir\, cruzar la explanada\, controles de seguridad\, torniquetes.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Charles de Gaulle–Étoile · RER A hacia Marne-la-Vallée–Chessy · 45 min de traslado
+TRIGGER:-PT55M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Marne-la-Vallée–Chessy
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p15d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T091500
+DTEND;TZID=Europe/Paris:20260915T101500
+SUMMARY:🔒 Entrada a los parques
+LOCATION:Disneyland Paris
+DESCRIPTION:París\nReserva: Disneyland Paris · 1 día\, 2 parques · PAGADO\nBoleto de 1 día y 2 parques: se puede pasar de Disneyland Park a Walt Disney Studios y volver.\n⚠️ PENDIENTE: HORA DE APERTURA del 15 de septiembre: VERIFICAR unos días antes. La hora mostrada es provisional. / ORDEN DE ATRACCIONES POR PRIORIDAD (🔴 A / 🟠 B / ⚪ opcional): DATO PENDIENTE. No lo invento — hay que definirlo con el mapa y los horarios reales del día. / Crush's Coaster está CERRADO desde el 7 de septiembre de 2026 hasta verano de 2027.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Entrada a los parques
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p15h@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T221500
+DTEND;TZID=Europe/Paris:20260915T231500
+SUMMARY:🔒 Regreso · RER A a París
+LOCATION:Marne-la-Vallée–Chessy
+DESCRIPTION:París\nSalir en cuanto termine el espectáculo o esperar 20 minutos a que se vacíe el andén. Dirección: hacia París (Poissy / Cergy / Saint-Germain-en-Laye).\n⚠️ PENDIENTE: Hora del último RER A hacia París: VERIFICAR el mismo día en la estación. Es el dato que no se puede fallar.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Regreso · RER A a París
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d15-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260915T073000
+DTEND;TZID=Europe/Paris:20260915T074500
+SUMMARY:▶ Salir del hotel · Disneyland Paris · 1 día\, 2 parques
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París · Disneyland Paris · 1 día\, 2 parques
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p16c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260916T111500
+DTEND;TZID=Europe/Paris:20260916T121500
+SUMMARY:🔒 Louvre · llegada y acceso
+LOCATION:Pirámide del Louvre\, 75001 París
+DESCRIPTION:París\nReserva: Museo del Louvre · PAGADO\nLlegar 15 minutos antes de la hora de la entrada. Con entrada horaria comprada\, el acceso por la Pirámide tiene fila propia.\n⚠️ PENDIENTE: Acceso recomendado (Pirámide / Porte des Lions / Carrousel): VERIFICAR EN COMPROBANTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Louvre · llegada y acceso · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Louvre · llegada y acceso
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p16d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260916T113000
+DTEND;TZID=Europe/Paris:20260916T141500
+SUMMARY:🔒 Museo del Louvre
+LOCATION:Rue de Rivoli\, 75001 París
+DESCRIPTION:París\nReserva: Museo del Louvre · PAGADO\nEmpezar por Denon\, que es donde está casi todo lo anterior. Los baños del ala Richelieu suelen tener menos fila.\n⚠️ PENDIENTE: RECORRIDO INTERNO OPTIMIZADO sala por sala: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Museo del Louvre
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d16-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260916T093000
+DTEND;TZID=Europe/Paris:20260916T094500
+SUMMARY:▶ Salir del hotel · Louvre e Île de la Cité
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París · Louvre e Île de la Cité
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17a@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T074500
+DTEND;TZID=Europe/Paris:20260917T084500
+SUMMARY:🔒 Salida del hotel
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París\nDesayuno rápido. La entrada al Palacio es a las 10:00 y no admite retraso.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Salida del hotel
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17b@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T081000
+DTEND;TZID=Europe/Paris:20260917T091000
+SUMMARY:🔒 Pont de l'Alma · RER C
+LOCATION:Estación Pont de l'Alma\, RER C\, 75008 París
+DESCRIPTION:París\nRuta acordada: hotel → Pont de l'Alma → RER C → Versailles Château–Rive Gauche.\n⚠️ PENDIENTE: ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE\, no Versailles-Chantiers ni Versailles Rive Droite. / Frecuencia y duración exactas del trayecto: DATO PENDIENTE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Salida del hotel hacia Pont de l'Alma · RER C · 20 min de traslado
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Pont de l'Alma · RER C
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17c@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T092000
+DTEND;TZID=Europe/Paris:20260917T102000
+SUMMARY:🔒 Versailles Château–Rive Gauche
+LOCATION:Estación Versailles Château–Rive Gauche
+DESCRIPTION:París\nSalir de la estación y caminar unos 10 minutos hasta la Place d'Armes. Está señalizado y la mayoría de la gente va al mismo sitio.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Pont de l'Alma · RER C hacia Versailles Château–Rive Gauche · 35 min de traslado
+TRIGGER:-PT45M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Versailles Château–Rive Gauche
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17d@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T094000
+DTEND;TZID=Europe/Paris:20260917T104000
+SUMMARY:🔒 Place d'Armes · acceso al Palacio
+LOCATION:Place d'Armes\, 78000 Versailles
+DESCRIPTION:París\nReserva: Versailles Passport · PAGADO\nCon el Passport\, el acceso al Palacio es por la Entrada A. Control de seguridad.\n⚠️ PENDIENTE: Confirmar entrada exacta asignada en el comprobante
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Versailles Château–Rive Gauche hacia Place d'Armes · acceso al Palacio · 22 min de traslado
+TRIGGER:-PT32M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Place d'Armes · acceso al Palacio
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17e@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T100000
+DTEND;TZID=Europe/Paris:20260917T123000
+SUMMARY:🔒 Palacio de Versalles
+LOCATION:Château de Versailles
+DESCRIPTION:París\nReserva: Versailles Passport · PAGADO\nEl Passport incluye Palacio\, Jardines\, Trianon y Hameau de la Reine.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Palacio de Versalles
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17i@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T171500
+DTEND;TZID=Europe/Paris:20260917T181500
+SUMMARY:🔒 Regreso a París
+LOCATION:Versailles Château–Rive Gauche
+DESCRIPTION:París\nMismo RER C en sentido contrario\, dirección París.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:SAL YA desde Trianon y Hameau de la Reine hacia Regreso a París · 41 min de traslado
+TRIGGER:-PT51M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Regreso a París
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:p17k@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T233000
+DTEND;TZID=Europe/Paris:20260917T243000
+SUMMARY:🔒 Hotel · preparar maletas
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París\nMañana es día de aeropuerto.
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Ponte en marcha hacia Hotel · preparar maletas · traslado sin verificar\, revisa Maps
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:En 15 min: Hotel · preparar maletas
+TRIGGER:-PT15M
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:d17-salida@europa2026
+DTSTAMP:20260904T000000Z
+DTSTART;TZID=Europe/Paris:20260917T074500
+DTEND;TZID=Europe/Paris:20260917T080000
+SUMMARY:▶ Salir del hotel · Versalles y cena especial
+LOCATION:DIRECCIÓN POR VERIFICAR
+DESCRIPTION:París · Versalles y cena especial
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 30 min
+TRIGGER:-PT30M
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Salir del hotel en 10 min
+TRIGGER:-PT10M
+END:VALARM
+END:VEVENT
+END:VCALENDAR
