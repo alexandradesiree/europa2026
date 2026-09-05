@@ -260,7 +260,7 @@ DTSTART;TZID=Europe/Paris:20260909T141000
 DTEND;TZID=Europe/Paris:20260909T151000
 SUMMARY:🔒 Llegada · Estocolmo-Arlanda
 LOCATION:Aeropuerto de Arlanda (ARN)
-DESCRIPTION:Madrid\nRecoger equipaje y bajar al Arlanda Express o al bus Flygbussarna.\n⚠️ PENDIENTE: Modo de traslado ARN → Hotel C elegido: DATO PENDIENTE. Arlanda Express llega a la Estación Central\, a 2 minutos a pie del hotel.
+DESCRIPTION:Madrid\nAterrizaje. El traslado real empieza después de bajar del avión y recoger el equipaje\, no aquí.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:Ponte en marcha hacia Llegada · Estocolmo-Arlanda · traslado sin verificar\, revisa Maps
@@ -282,8 +282,8 @@ LOCATION:Vasaplan 4\, 111 20 Estocolmo
 DESCRIPTION:Madrid\nCheck-in. El hotel está pegado a la Estación Central.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Llegada · Estocolmo-Arlanda hacia Hotel C Stockholm · 119 min de traslado
-TRIGGER:-PT129M
+DESCRIPTION:SAL YA desde Recogida de equipaje y salida de la terminal hacia Hotel C Stockholm · 46 min de traslado
+TRIGGER:-PT56M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -348,8 +348,8 @@ LOCATION:Mariestad\, Suecia
 DESCRIPTION:Estocolmo\nReserva: Visita a la fábrica FX Airguns · Mariestad · CONFIRMADO\nFX confirmó que hay que estar en la fábrica a las 11:00.\n⚠️ PENDIENTE: Dirección exacta\, persona de contacto y duración de la visita: DATO PENDIENTE
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Salida de Estocolmo en auto hacia Fábrica FX Airguns · Mariestad · 767 min de traslado
-TRIGGER:-PT777M
+DESCRIPTION:SAL YA desde Salida de Estocolmo en auto hacia Fábrica FX Airguns · Mariestad · 198 min de traslado
+TRIGGER:-PT208M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -367,8 +367,8 @@ LOCATION:Vasaplan 4\, Estocolmo
 DESCRIPTION:Estocolmo\n⚠️ PENDIENTE: Hora estimada de regreso: DATO PENDIENTE (depende de la hora de salida de Mariestad)
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Mariestad · centro y lago Vänern hacia Regreso al Hotel C Stockholm · 767 min de traslado
-TRIGGER:-PT777M
+DESCRIPTION:SAL YA desde Mariestad · centro y lago Vänern hacia Regreso al Hotel C Stockholm · 198 min de traslado
+TRIGGER:-PT208M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -511,15 +511,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:s12f@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260912T141500
-DTEND;TZID=Europe/Paris:20260912T151500
+DTSTART;TZID=Europe/Paris:20260912T142000
+DTEND;TZID=Europe/Paris:20260912T152000
 SUMMARY:🔒 Traslado al aeropuerto de Arlanda
 LOCATION:Aeropuerto de Arlanda (ARN)
 DESCRIPTION:Estocolmo\nArlanda Express desde la Estación Central: 20 minutos\, sale cada 10–15 minutos. El hotel está a 2 minutos a pie de la estación.\n⚠️ PENDIENTE: Devolución del auto al amigo / garaje AIMO Park (Birger Jarlsgatan 6): confirmar si esta gestión ocurre hoy y a qué hora.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde CORTE OPERATIVO · recoger equipaje hacia Traslado al aeropuerto de Arlanda · 119 min de traslado
-TRIGGER:-PT129M
+DESCRIPTION:SAL YA desde CORTE OPERATIVO · recoger equipaje hacia Traslado al aeropuerto de Arlanda · 46 min de traslado
+TRIGGER:-PT56M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -594,8 +594,8 @@ LOCATION:Meliá Paris Vendôme\, 8 Rue Cambon\, 75001 París
 DESCRIPTION:Estocolmo\nCheck-in a partir de las 15:00. Llegando a esta hora\, la habitación ya está lista.
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Llegada · París-Charles de Gaulle hacia Hotel en París · check-in · 78 min de traslado
-TRIGGER:-PT88M
+DESCRIPTION:SAL YA desde Llegada · París-Charles de Gaulle hacia Hotel en París · check-in · 49 min de traslado
+TRIGGER:-PT59M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -626,10 +626,10 @@ BEGIN:VEVENT
 UID:p13j@europa2026
 DTSTAMP:20260904T000000Z
 DTSTART;TZID=Europe/Paris:20260913T163000
-DTEND;TZID=Europe/Paris:20260913T183000
+DTEND;TZID=Europe/Paris:20260913T190000
 SUMMARY:🔒 Free tour Arco y Campos Elíseos
 LOCATION:Zona Arco del Triunfo
-DESCRIPTION:París\nReserva: Free tour Arco del Triunfo y Campos Elíseos (español) · CONFIRMADO\nPunto de encuentro: VERIFICAR EN COMPROBANTE\nLlegar 15 minutos antes.\n⚠️ PENDIENTE: PUNTO EXACTO DE ENCUENTRO Y REFERENCIA VISUAL: VERIFICAR EN COMPROBANTE. No lo invento. / Hora exacta de finalización: estimada en 18:30
+DESCRIPTION:París\nReserva: Free tour Arco del Triunfo y Campos Elíseos (español) · CONFIRMADO\nPunto de encuentro: VERIFICAR EN COMPROBANTE\nLlegar 15 minutos antes.\n⚠️ PENDIENTE: PUNTO EXACTO DE ENCUENTRO Y REFERENCIA VISUAL: VERIFICAR EN COMPROBANTE. No lo invento. / Hora exacta de finalización: estimada en 19:00\, junto a Trocadéro
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:En 15 min: Free tour Arco y Campos Elíseos · VERIFICAR EN COMPROBANTE
@@ -639,11 +639,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:p13l@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260913T185500
-DTEND;TZID=Europe/Paris:20260913T195500
+DTSTART;TZID=Europe/Paris:20260913T193500
+DTEND;TZID=Europe/Paris:20260913T203500
 SUMMARY:🔒 Port de la Bourdonnais · embarque
 LOCATION:Port de la Bourdonnais\, 75007 París
-DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nBajar del Trocadéro cruzando el Pont d'Iéna. Objetivo: estar aquí a las 18:55.
+DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nBajar del Trocadéro cruzando el Pont d'Iéna. Con el crucero fijado al Plan B (20:00)\, llegar a las 19:35 deja 25 minutos de margen real para hacer fila y embarcar.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:SAL YA desde Trocadéro · fotos de la Torre Eiffel hacia Port de la Bourdonnais · embarque · 11 min de traslado
@@ -658,11 +658,11 @@ END:VEVENT
 BEGIN:VEVENT
 UID:p13m@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260913T190000
-DTEND;TZID=Europe/Paris:20260913T201000
+DTSTART;TZID=Europe/Paris:20260913T200000
+DTEND;TZID=Europe/Paris:20260913T211000
 SUMMARY:🔒 Crucero Bateaux Parisiens
 LOCATION:Port de la Bourdonnais\, 75007 París
-DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nBoleto de horario abierto: el objetivo es el de las 19:00. Si no entramos\, el plan B es el de las 20:00.
+DESCRIPTION:París\nReserva: Bateaux Parisiens · crucero por el Sena · PAGADO\nPunto de encuentro: Port de la Bourdonnais\, 75007 París\nPLAN B CONFIRMADO COMO PRINCIPAL: el horario de las 19:00 no da tiempo real desde el free tour. Se embarca en la salida de las 20:00.
 BEGIN:VALARM
 ACTION:DISPLAY
 DESCRIPTION:En 15 min: Crucero Bateaux Parisiens · Port de la Bourdonnais\, 75007 París
@@ -993,15 +993,15 @@ END:VEVENT
 BEGIN:VEVENT
 UID:p17d@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260917T094000
-DTEND;TZID=Europe/Paris:20260917T104000
+DTSTART;TZID=Europe/Paris:20260917T093000
+DTEND;TZID=Europe/Paris:20260917T103000
 SUMMARY:🔒 Place d'Armes · acceso al Palacio
 LOCATION:Place d'Armes\, 78000 Versailles
 DESCRIPTION:París\nReserva: Versailles Passport · PAGADO\nCon el Passport\, el acceso al Palacio es por la Entrada A. Control de seguridad.\n⚠️ PENDIENTE: Confirmar entrada exacta asignada en el comprobante
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Versailles Château–Rive Gauche hacia Place d'Armes · acceso al Palacio · 22 min de traslado
-TRIGGER:-PT32M
+DESCRIPTION:SAL YA desde Versailles Château–Rive Gauche hacia Place d'Armes · acceso al Palacio · 10 min de traslado
+TRIGGER:-PT20M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1026,8 +1026,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:p17i@europa2026
 DTSTAMP:20260904T000000Z
-DTSTART;TZID=Europe/Paris:20260917T171500
-DTEND;TZID=Europe/Paris:20260917T181500
+DTSTART;TZID=Europe/Paris:20260917T173000
+DTEND;TZID=Europe/Paris:20260917T183000
 SUMMARY:🔒 Regreso a París
 LOCATION:Versailles Château–Rive Gauche
 DESCRIPTION:París\nMismo RER C en sentido contrario\, dirección París.
@@ -1104,8 +1104,8 @@ LOCATION:Aeropuerto Charles de Gaulle (CDG)
 DESCRIPTION:París\nFacturación\, control de seguridad y control de pasaportes (salida del espacio Schengen: añade tiempo).\n⚠️ PENDIENTE: Terminal: DATO PENDIENTE / Puerta de embarque: VERIFICAR EL DÍA DEL VUELO
 BEGIN:VALARM
 ACTION:DISPLAY
-DESCRIPTION:SAL YA desde Salida del hotel hacia Charles de Gaulle · 78 min de traslado
-TRIGGER:-PT88M
+DESCRIPTION:SAL YA desde Salida del hotel hacia Charles de Gaulle · 49 min de traslado
+TRIGGER:-PT59M
 END:VALARM
 BEGIN:VALARM
 ACTION:DISPLAY

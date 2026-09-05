@@ -1,12 +1,11 @@
 # EUROPA 2026 · DATOS PENDIENTES
 
-Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y que no se inventó.
+Generada desde `data.js`. Incluye la auditoría automática de la app (tiempos, coordenadas, reservas).
 
 ---
 
-## Conflictos y datos provisionales (requieren tu decisión)
+## Decisiones pendientes
 
-- **07 septiembre · FlamencoExport · abanicos** — CONFLICTO DE HORARIO: dijiste que iba después de Cardamomo, pero el tablao termina hacia las 22:30 y la tienda estará cerrada. La coloqué entre la Almudena y La Bola, que es donde encaja geográficamente. Si prefieres otro momento, dímelo.
 - **11 septiembre · Skeppsholmen** — POSICIÓN EN EL DÍA POR CONFIRMAR: no consta en qué momento quedó dentro de la jornada. Colocada aquí como opcional.
 - **18 septiembre · Salida del hotel** — Hora calculada sobre un vuelo a las 10:00 SIN CONFIRMAR. Si la hora del vuelo cambia, esta hora cambia.
 - **Sesión de fotos privada en la Torre Eiffel** — CONFIRMAR SI LA COMPRA SE COMPLETÓ: la captura es la pantalla de pago de GetYourGuide, no el comprobante final. Si ya está pagada, cambia status a pagado.
@@ -18,20 +17,15 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 - **Crucero por el archipiélago · Strömma** — 12 septiembre 10:30
 - **Sesión de fotos privada en la Torre Eiffel** — 14 septiembre 08:00
 
-## Reservas confirmadas
+## Restaurantes por elegir (sin coordenadas)
 
-- Palacio Real de Madrid · visita guiada — 07 septiembre 11:00 · CONFIRMADO
-- La Bola · cocido madrileño — 07 septiembre 13:30 · CONFIRMADO
-- Cardamomo · tablao flamenco — 07 septiembre · CONFIRMADO
-- Museo Nacional del Prado — 08 septiembre 12:00 · CONFIRMADO
-- Visita a la fábrica FX Airguns · Mariestad — 10 septiembre 11:00 · CONFIRMADO
-- Free tour por Estocolmo (español) — 11 septiembre 13:00 · A41038311 · CONFIRMADO
-- Free tour Arco del Triunfo y Campos Elíseos (español) — 13 septiembre 16:30 · A41342195 · CONFIRMADO
-- Bateaux Parisiens · crucero por el Sena — 13 septiembre 19:00 · PAGADO
-- Free tour Montmartre (español) — 14 septiembre 15:45 · A41342138 · CONFIRMADO
-- Disneyland Paris · 1 día, 2 parques — 15 septiembre · PAGADO
-- Museo del Louvre — 16 septiembre 11:30 · PAGADO
-- Versailles Passport — 17 septiembre 10:00 · PAGADO
+- **13 septiembre · 10:00** — Desayuno (Cerca del hotel)
+- **13 septiembre · 13:15** — Comida (Zona Tullerías / Concorde)
+- **13 septiembre · 21:30** — Cena (Zona Torre Eiffel / Champ de Mars)
+- **14 septiembre · 09:15** — Desayuno especial (Por confirmar)
+- **14 septiembre · 13:15** — Comida (Zona Opéra / Haussmann)
+- **16 septiembre · 09:45** — Desayuno (Cerca del hotel)
+- **17 septiembre · 20:30** — Cena especial (Por confirmar)
 
 ## Datos pendientes por día
 
@@ -68,7 +62,7 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 | Hora | Parada | Qué falta |
 |---|---|---|
 | 08:20 | Barajas Terminal 4 | Puerta de embarque: VERIFICAR EL DÍA DEL VUELO |
-| 14:10 | Llegada · Estocolmo-Arlanda | Modo de traslado ARN → Hotel C elegido: DATO PENDIENTE. Arlanda Express llega a la Estación Central, a 2 minutos a pie del hotel. |
+| 14:40 | Recogida de equipaje y salida de la terminal | Modo de traslado ARN → Hotel C elegido: DATO PENDIENTE. Arlanda Express llega a la Estación Central, a 2 minutos a pie del hotel. |
 | 17:30 | Fika | Cafetería concreta para esta fika: DATO PENDIENTE. Vete-Katten (Kungsgatan 55) está aprobado como konditori histórico y queda cerca del hotel — prioridad prinsesstårta. |
 | 19:00 | Cena | Restaurante: DATO PENDIENTE |
 | 21:00 | ICEBAR Stockholm | No consta reservado. Confirmar disponibilidad. |
@@ -101,7 +95,7 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 |---|---|---|
 | 09:00 | Check-out · Hotel C Stockholm | Confirmar que el hotel guarda equipaje después del check-out |
 | 10:15 | Muelle 15 · Strandvägen | Coordenadas exactas del muelle 15: verificar. Strandvägen tiene varios embarcaderos numerados seguidos. |
-| 14:15 | Traslado al aeropuerto de Arlanda | Devolución del auto al amigo / garaje AIMO Park (Birger Jarlsgatan 6): confirmar si esta gestión ocurre hoy y a qué hora. |
+| 14:20 | Traslado al aeropuerto de Arlanda | Devolución del auto al amigo / garaje AIMO Park (Birger Jarlsgatan 6): confirmar si esta gestión ocurre hoy y a qué hora. |
 | 15:20 | Arlanda · facturación y seguridad | Terminal de salida de SK579 y puerta de embarque: VERIFICAR EL DÍA DEL VUELO |
 | 20:25 | Llegada · París-Charles de Gaulle | Modo de traslado CDG → hotel: DATO PENDIENTE. A esa hora el taxi tarifa fija a la orilla derecha (~56 €) es lo más razonable con maletas. |
 
@@ -114,8 +108,9 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 | 10:30 | Jardín de las Tullerías | Confirmar si el globo olímpico sigue en pie en septiembre de 2026 |
 | 13:15 | Comida | Restaurante: DATO PENDIENTE |
 | 16:30 | Free tour Arco y Campos Elíseos | PUNTO EXACTO DE ENCUENTRO Y REFERENCIA VISUAL: VERIFICAR EN COMPROBANTE. No lo invento. |
-| 16:30 | Free tour Arco y Campos Elíseos | Hora exacta de finalización: estimada en 18:30 |
-| 20:45 | Cena | Restaurante: DATO PENDIENTE |
+| 16:30 | Free tour Arco y Campos Elíseos | Hora exacta de finalización: estimada en 19:00, junto a Trocadéro |
+| 21:30 | Cena | Restaurante: DATO PENDIENTE |
+| 21:30 | Cena | Hora aproximada: calculada sobre el fin del crucero a las 21:10 más 20 min para desembarcar y llegar caminando. Ajustar cuando se elija el lugar. |
 
 ### Lunes 14 septiembre · Fotos al amanecer, Galeries Lafayette y Montmartre
 
@@ -158,8 +153,8 @@ Generada desde `data.js`. Cada línea es algo que la app marca como pendiente y 
 |---|---|---|
 | 08:10 | Estación Invalides · RER C | ANDÉN Y NOMBRE DE MISIÓN DEL TREN: verificar en el panel. En el RER C hay que fijarse en el código de cuatro letras del tren y en que el destino sea VERSAILLES CHÂTEAU–RIVE GAUCHE, no Versailles-Chantiers ni Versailles Rive Droite. |
 | 08:10 | Estación Invalides · RER C | Frecuencia y duración exactas del trayecto: DATO PENDIENTE |
-| 09:40 | Place d'Armes · acceso al Palacio | Confirmar entrada exacta asignada en el comprobante |
-| 12:30 | Jardines de Versalles | Horario de la Flotilla (barcas del Gran Canal) y de los espectáculos de fuentes: DATO PENDIENTE. Este es el único dato interno de Versalles sin confirmar. |
+| 09:30 | Place d'Armes · acceso al Palacio | Confirmar entrada exacta asignada en el comprobante |
+| 12:35 | Jardines de Versalles | Horario de la Flotilla (barcas del Gran Canal) y de los espectáculos de fuentes: DATO PENDIENTE. Este es el único dato interno de Versalles sin confirmar. |
 | 14:00 | Comida en Versalles | Restaurante: DATO PENDIENTE |
 | 20:30 | Cena especial | SIN CERRAR. Candidato registrado: Joséphine Chez Dumonet. Requiere reserva con antelación. Decidir antes de viajar. |
 

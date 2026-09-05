@@ -111,8 +111,25 @@ function getLeg(a, b) {
              steps: ["Ruta no verificada: falta la dirección o las coordenadas de una de las dos paradas."],
              pending: "TRAMO SIN VERIFICAR. Faltan coordenadas." };
   }
+  if (km > 30) {
+    /* Carretera / trayecto interurbano: coche o tren regional entre ciudades,
+       fuera de tráfico urbano denso. 85 km/h + 20 min de margen (acceso a
+       autopista, peajes, entrada a la ciudad de destino). */
+    return { mode: "carretera", dur: Math.round(km / 85 * 60) + 20, dist: km.toFixed(0) + " km", verified: false, from: a, to: b,
+             steps: ["Trayecto interurbano estimado en línea recta a velocidad de autopista.", "Abrir Google Maps o Apple Maps para la ruta real por carretera."],
+             pending: "TRAMO SIN VERIFICAR: estimado sobre distancia en línea recta a velocidad de autopista. Puede variar con tráfico real." };
+  }
+  if (km > 10) {
+    /* Trayecto urbano largo o cercanía de aeropuerto: taxi, coche o tren
+       regional dentro de la misma área metropolitana. 35 km/h + 10 min. */
+    return { mode: "transporte", dur: Math.round(km / 35 * 60) + 10, dist: km.toFixed(1) + " km", verified: false, from: a, to: b,
+             steps: ["Distancia larga dentro del área metropolitana.", "Abrir Google Maps o Apple Maps: taxi, tren regional o autobús según la zona."],
+             pending: "TRAMO SIN VERIFICAR: estimado a velocidad de taxi/tren regional. Confirmar con Maps el día del traslado." };
+  }
   if (km > 3.2) {
-    return { mode: "transporte", dur: Math.round(km / 20 * 60) + 10, dist: km.toFixed(1) + " km", verified: false, from: a, to: b,
+    /* Transporte urbano dentro de la ciudad: metro, bus o tranvía.
+       18 km/h + 12 min (acceso al andén, espera, transbordo, salida). */
+    return { mode: "transporte", dur: Math.round(km / 18 * 60) + 12, dist: km.toFixed(1) + " km", verified: false, from: a, to: b,
              steps: ["Distancia larga para ir a pie.", "Abrir Google Maps o Apple Maps y elegir transporte público."],
              pending: "TRAMO SIN VERIFICAR: línea, sentido y estación de bajada pendientes de confirmar. Usa Maps mientras tanto." };
   }
